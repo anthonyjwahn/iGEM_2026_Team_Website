@@ -1,0 +1,3257 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="images/logo/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/logo/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="images/logo/manifest.json">
+	<link rel="mask-icon" href="images/logo/safari-pinned-tab.svg" color="#607d8b">
+	<meta name="theme-color" content="#ffffff">
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+	<!--For accordion styling-->
+	<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+
+	<title>iGEM at Cornell | Team</title>
+</head>
+
+<body>
+	<!--/************************* NAVIGATION BAR ************************************/ -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<nav class="navbar fixed-top">
+		<span class="navbar-toggle" id="js-navbar-toggle">
+			<i class="fa fa-bars"></i>
+		</span>
+		<a href="index.html" class="logo"><img src="images/logo/logo_new.png" width="200" alt="logo"></a>
+		<ul class="main-nav" id="js-menu">
+			<li>
+				<a href="about.html" class="nav-links">About</a>
+			</li>
+			<li>
+				<a href="team.html" class="nav-links activenav">Team</a>
+			</li>
+			<li>
+				<a href="apply.html" class="nav-links">Apply</a>
+			</li>
+			<li>
+				<a href="faq.html" class="nav-links">FAQ</a>
+			</li>
+			<li>
+				<a href="donate.html" class="nav-links">Donate</a>
+			</li>
+		</ul>
+	</nav>
+
+
+	<!--/****************************** BANNER *****************************************/ -->
+
+	<div class="home-banner-large-container">
+		<div class="home-banner-container" id="slideshow">
+			<div>
+				<img src="images/banners/team1 2025.JPG" style="width:100%">
+			</div>
+			<div>
+				<img src="images/banners/team2 2025.JPG" style="width:100%">
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function () {
+			$('#slideshow > div:first')
+				.toggle()
+				.next()
+				.toggle()
+				.end()
+				.appendTo('#slideshow');
+		}, 3000);
+	</script>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!--************** INTRO **************-->
+
+	<div class="container about-intro">
+		<p>
+
+			The Cornell iGEM Project Team features a talented and diverse group of individuals striving to use synthetic biology to solve some
+			of our communities' most challening problems.
+			We span almost every college and represent a variety of different majors and interests.
+		</p>
+		<br> <br>
+		<h1> Our Team </h1>
+	</div>
+
+	<!--************** TEAM LEAD ****************-->
+	<!--Co leads-->
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4" style="margin:auto; margin-right:15px">
+			<div class="image-flip teamLead">
+		<div class="mainflip flip-0">
+			<div class="frontside">
+				<div class="card">
+					<div class="card-body text-center">
+						<p><img class=" img-fluid" src="images/headshots_2025/Coco Poopat.JPG" alt="card image"></p>
+						<!-- <p><img class=" img-fluid" src="images/headshots_2021/Xihang Wang.jpg" alt="card image"></p> -->
+						<h4 class="card-title">George Zeng</h4>
+						<p class="card-text">Co Team Lead<br>Major: Plant Sciences<br>Hometown: Las Vegas, NV
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="backside">
+				<div class="card">
+					<div class="card-body text-center mt-4">
+						<h4 class="card-title">Coco Poopat</h4>
+						<p class="card-text">Hey! I'm Coco and I'm a Plant Sciences major, class of 2026! I was drawn to iGEM because I think synbio has a huge potential to make positive change in the world. I'm specifically interested in its applications to agriculture and nutrition. Outside of iGEM, I love baking, taking care of my plants, and helping out at Dilmun Hill Student Farm.
+						</p>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+							<li class="list-inline-item">
+								<a class="social-icon text-xs-center" href="mailto:nmp77@cornell.edu">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-4" style="margin:auto; margin-left:15px">
+		<div class="image-flip teamLead">
+			<div class="mainflip flip-0">
+				<div class="frontside">
+					<div class="card">
+						<div class="card-body text-center">
+							<p><img class=" img-fluid" src="images/headshots_2025/Jeffrey Ho.JPG" alt="card image"></p>
+							<!-- <p><img class=" img-fluid" src="images/headshots_2021/Xihang Wang.jpg" alt="card image"></p> -->
+						<h4 class="card-title">Jeffrey Ho</h4>
+							<p class="card-text">Co Team Lead<br>Major: Biological Sciences<br>Hometown: Millburn, NJ
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="backside">
+					<div class="card">
+						<div class="card-body text-center mt-4">
+							<h4 class="card-title">Jeffrey Ho</h4>
+							<p class="card-text">Hi! My name is Jeff and I am a biological sciences major concentrating in neurobiology! I joined iGEM because I found the projects they led impactful and was eager to contribute to a dedicated and passionate team serving the local and global community. Outside of iGEM, I'm a part of Red Cross, the HeARTbeat at Cornell and I write short stories in my free time. With free time, I like to create frog memes, take walks and eat all the sushi I can find in a 20 mile radius.
+							</p>
+							<ul class="list-inline">
+								<li class="list-inline-item">
+								<li class="list-inline-item">
+									<a class="social-icon text-xs-center" href="mailto:jjh357@cornell.edu">
+										<i class="fa fa-envelope"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--./Co leads-->
+
+
+	<!--Single lead
+	<div class="image-flip teamLead">
+		<div class="mainflip flip-0">
+			<div class="frontside">
+				<div class="card">
+					<div class="card-body text-center">
+						<p><img class=" img-fluid" src="images/headshots_2024/Jeffrey Ho.JPG" alt="card image"></p>
+						<p><img class=" img-fluid" src="images/headshots_2021/Xihang Wang.jpg" alt="card image"></p> --> <!--
+						<h4 class="card-title">Jeffrey Ho</h4>
+						<p class="card-text">Team Lead<br>Major: Biological Sciences<br>Hometown: Millburn, NJ
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="backside">
+				<div class="card">
+					<div class="card-body text-center mt-4">
+						<h4 class="card-title">Jeffrey Ho</h4>
+						<p class="card-text">Hi! My name is Jeff and I am a biological sciences major concentrating in neurobiology! I joined iGEM because I found the projects they led impactful and was eager to contribute to a dedicated and passionate team serving the local and global community. Outside of iGEM, I'm a part of Red Cross, the HeARTbeat at Cornell and a research lab. With free time, I like to create frog memes, take walks and eat all the sushi I can find in a 20 mile radius.
+						</p>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+							<li class="list-inline-item">
+								<a class="social-icon text-xs-center" href="mailto:jjh357@cornell.edu">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	./Single lead-->
+	
+	<!--**************** MEMBERS *******************-->
+
+	<section id="team" class="pb-5">
+		<div class="container">
+
+			<!-- Members Nav -->
+
+			<ul id="subteamNav" class="nav">
+				<li onclick="selectSubteam('wetLabTeam', this)" class="nav-item active"><a class="nav-link">Wet Lab</a></li>
+				<li onclick="selectSubteam('productTeam', this)" class="nav-item"><a class="nav-link">Product Development</a>
+				</li>
+				<li onclick="selectSubteam('policyTeam', this)" class="nav-item"><a class="nav-link">Policy and Practices</a>
+				</li>
+				<li onclick="selectSubteam('businessTeam', this)" class="nav-item"><a class="nav-link">Business</a></li>
+				<li onclick="selectSubteam('wikiTeam', this)" class="nav-item"><a class="nav-link">Wiki</a></li>
+				<li onclick="selectSubteam('mentorsAdvisors', this)" class="nav-item"><a class="nav-link">Mentors and
+						Advisors</a>
+				</li>
+				<li onclick="selectSubteam('alumniList', this)" class="nav-item"><a class="nav-link">Alumni</a>
+				</li>
+			</ul>
+
+			<div class="wetLabTeam">
+				<div class="row">
+					
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/George Zeng.JPG" alt="card image"></p>
+											<h4 class="card-title">George Zeng</h4>
+											<p class="card-text">Wet Lab Co-Lead
+												<br>Major: Biomedical Engineering<br>Hometown: Dallas, TX
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">George Zeng</h4>
+											<p class="card-text">Hi, my name is George and I'm studying biomedical engineering in the class of 2027! I joined iGEM because I wanted to work on projects that could use synthetic biology to make an impact. I've met really cool people on the team and it's great that we all can come together to solve real world problems while having fun. Outside of iGEM, I work in the Butcher lab, enjoy watching sports, playing badminton, and working on my cattle farm!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:gz266@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Richard Lin.JPG" alt="card image"></p>
+											<h4 class="card-title">Richard Lin</h4>
+											<p class="card-text">Wet Lab Co-Lead<br>Major: Biomedical Engineering<br>Hometown: Long Island, NY
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Richard Lin</h4>
+											<p class="card-text">Hi guys! I'm Richard, and I'm a BME major in the class of 2026! I joined iGEM because I was interested in learning how to apply synthetic biology to addressing human health challenges while also having fun with other passionate individuals! Outside of iGEM, I enjoy hanging out with my friends, playing badminton, trying out new food, volunteering for the Cornell Translator Interpreter Program, and lastly camping and pulling all nighters in Tang Hall :))</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:rl722@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Lulu Wang.JPG"
+													alt="card image"></p>
+											<h4 class="card-title">Lulu Wang</h4>
+											<p class="card-text">Wet Lab
+												<br>Major: Chemical Engineering<br>Hometown: Mason, OH</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Lulu Wang</h4>
+											<p class="card-text">Hi! I'm Lulu, a chemical engineering major in the class of 2027. I joined iGEM to gain some hands-on engineering experience while also being part of a collaborative community that creates projects with real-life impacts. In my free time, I enjoy watching historical c-dramas, trying out new stationery, and reading anything from contemporary fiction to sci-fi.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:lw765@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Natalie Deng.JPG" alt="card image"></p>
+											<h4 class="card-title">Natalie Deng</h4>
+											<p class="card-text">Wet Lab<br>Major: Biology & Society<br>Hometown: Queens, NY
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Natalie Deng</h4>
+											<p class="card-text">Hi, I'm Natalie! I'm a Biology & Society major in the class of 2027 from Queens, New York. I joined iGEM because modern problems require modern (synbio) solutions. Outside of iGEM, i'm a part of Assorted Aces, Cornell EARS, Community Elderly Partnership, and the Cornell Fanworks Club. In my free time, I like to play card games, ice skate, and perfect my CHIMPS strategy in BTD6.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:nd429@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Aaryaa Chiney.JPG" alt="card image"></p>
+											<h4 class="card-title">Aaryaa Chiney</h4>
+											<p class="card-text">Wet Lab<br>Major: Biological Engineering<br>Hometown: Rutherford, NJ</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Aaryaa Chiney</h4>
+											<p class="card-text">Hi, I'm Aaryaa and I'm majoring in Biological Engineering in CALS. I joined iGEM to learn theoretical and practical skills in bioengineering while being part of a team that works to share new and innovative scientific research with the public. Outside of iGEM, I'm also part of Splash at Cornell and a research lab. In my free time, I like to sing, find new foods to try, and build legos!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:aac239@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->					
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Michelle Kim.JPG" alt="card image"></p>
+											<h4 class="card-title">Michelle Kim</h4>
+											<p class="card-text">Wet Lab<br>Major: Biology & Society<br>Hometown: VA</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Michelle Kim</h4>
+											<p class="card-text">Hi! My name is Michelle and I'm studying Biology & Society in the class of 2027. I joined iGEM because I am interested in utilizing synthetic biology to solve contemporary issue. Outside of iGEM, I enjoy playing the violin, tennis, and going on adventures.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:mak477@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Sylvia Park.JPG" alt="card image"></p>
+											<h4 class="card-title">Sylvia Park</h4>
+											<p class="card-text">Wet Lab<br>Major: Bioengineering<br>Hometown: Seoul, Korea</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Sylvia Park</h4>
+											<p class="card-text">Hi! I'm Sylvia, a biological engineering student in the Class of 28 from Korea. I joined the iGEM wet lab subteam because I love hands-on lab work and the idea of using synthetic biology to solve real-world problems. In my free time, I enjoy watching sitcoms (Brooklyn 99 is my favorite!), trying new foods, going on walks, and spending time with friends.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:jp2629@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Jerry Lu.JPG" alt="card image"></p>
+											<h4 class="card-title">Jerry Lu</h4>
+											<p class="card-text">Wet Lab<br>Major: Chemistry & Biology<br>Hometown: Augusta, GA</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Jerry Lu</h4>
+											<p class="card-text">Hi! My name is Jerry and I'm studying chemistry and biology at CAS in the class of 2028. I joined iGEM to simultaneously play with bacteria and address pressing health and environmental challenges. More importantly, iGEM provided me with a community of like-minded individuals from whom I can draw lots of inspiration! Outside of iGEM, I love playing poker or ERS, running/biking, and trying not to get crushed by heavy things in the gym. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:zl958@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Anousha Shahid.JPG" alt="card image"></p>
+											<h4 class="card-title">Anousha Shahid</h4>
+											<p class="card-text">Wet Lab<br>Major: Biomedical Engineering<br>Hometown: Woodbridge, CT</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Anousha Shahid</h4>
+											<p class="card-text">Hi! I'm Anousha and I am a BME major minoring in business. I joined iGEM to meet more people in my field and contribute to innovative projects! Outside of iGEM I like to crochet and work out.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:ams878@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Antone Jung.JPG" alt="card image"></p>
+											<h4 class="card-title">Antone Jung</h4>
+											<p class="card-text">Wet Lab<br>Major: Biological Sciences<br>Hometown: San Jose, CA</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Antone Jung</h4>
+											<p class="card-text">Hey, I'm Antone, a BioSci major in the class of 2027! I'm also pursuing minors in Computer Science and Viticulture & Enology. I joined iGEM because I think synbio has a lot of potential, and I liked how iGEM incorporates so many fields into our projects. Outside of the lab, I love to play the ukulele and piano, read science fiction, and rock/tree/anything climb.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:aj564@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+				</div>
+			</div>
+
+			<div class="productTeam hide">
+				<div class="row">
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Alvin Fang.JPG" alt="card image"></p>
+											<h4 class="card-title">Alvin Fang</h4>
+											<p class="card-text">Product Development Lead<br>Major: Biologial Sciences<br>Hometown: Shanghai, China
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Alvin Fang</h4>
+											<p class="card-text">Hi, I'm Alvin! I'm a biological science major in class of 2027. I love iGEM because my high school iGEM experience raised my passion to biology, and I want to advance that in college. iGEM represents possibilities. From brainstorm ideas to solid products, iGEM greatly shows the potential of synthetic biology to address real life challenges. Outside of iGEM, I'm a brother, racer, drummer, and videographer.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:df442@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Lynn Heo.JPG" alt="card image"></p>
+											<h4 class="card-title">Lynn Heo</h4>
+											<p class="card-text">Product Development<br>Major: Biomedical Engineering<br>Hometown: Upper Saddle River, NJ</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Lynn Heo</h4>
+											<p class="card-text">Hi! I'm Lynn, and I am majoring in biomedical engineering in the class of 2027. I joined iGEM because I love the way synthetic biology can be utilized to solve any problem that exists around the world. Outside of iGEM, I love to take photos of food, listen to Bruno Mars, study at Catherwood library, and go on random adventures in Ithaca.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:lh687@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Neha Chopade.JPG" alt="card image"></p>
+											<h4 class="card-title">Neha Chopade</h4>
+											<p class="card-text">Product Development<br>Major: Chemical Engineering<br>Hometown: San Diego, CA</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Neha Chopade</h4>
+											<p class="card-text">Hi, I'm Neha Chopade! I joined iGEM because I am excited about exploring the applications of synthetic biology and I wanted to gain more hands-on experience. My major is currently biomedical engineering and I am interested in biomaterials and drug delivery. Apart from iGem, I am a member of Science Olympiad at Cornell, I research for the Delisa Lab, and I enjoy rock climbing, biking, playing chess, and hiking.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:nc457@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Anna Voronova.JPG" alt="card image"></p>
+											<h4 class="card-title">Anna Voronova</h4>
+											<p class="card-text">Product Development<br>Major: Chemical Engineering<br>Hometown: Sharon, MA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Anna Voronova</h4>
+											<p class="card-text">Hi, I'm Anna Voronova and I'm a chemical engineering major in the class of 2028. As a part of iGEM, I am eager to apply my interest in biomaterial and pharmaceutical areas and am excited to explore other fields it touches upon. I am looking forward to bond with others with shared curiosities on the team and to make a real-world impact through synthetic biology. Outside of iGEM I love exploring new places outdoors, biking, going on walks, cooking experimentally, making crafts, and traveling!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank"
+														href="mailto:asv44@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Ayush Tripathi.JPG" alt="card image"></p>
+											<h4 class="card-title">Ayush Tripathi</h4>
+											<p class="card-text">Product Development<br>Major: Chemical Engineering
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Ayush Tripathi</h4>
+											<p class="card-text">Hi, I'm Ayush Tripathi, and I'm a chemical engineering major interested in biotech applications. I joined iGEM because I believe the field of synthetic biology has the power to make many positive advancements to society. Outside of iGEM, I like volunteering in my community, reading, writing, and working out.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank"
+														href="mailto:at969@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Eryk Nguyen.JPG" alt="card image"></p>
+											<h4 class="card-title">Eryk Nguyen</h4>
+											<p class="card-text">Product Development<br>Major: Chemical Engineering<br>Hometown: Rochester, MI
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Eryk Nguyen</h4>
+											<p class="card-text">Hi, I'm Eryk! I'm a Chemical Engineering major in the class of 2028 and I'm interested in pharmaceuticals and drug delivery. I joined iGEM because I wanted to explore more about the applications of synthetic biology and gain more hands-on experience. When I'm not locked in at Mann Library, I enjoy practicing taekwondo, binging sitcoms, working out, and building Gundams! </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank"
+														href="mailto:ean54@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Isabella Salducco.JPG" alt="card image"></p>
+											<h4 class="card-title">Isabella Salducco</h4>
+											<p class="card-text">Product Development<br>Major: Biomedical Engineering<br>Hometown: Medford, NY
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Isabella Salducco</h4>
+											<p class="card-text">Hi! I'm Isabella, a member of the class of 2028 studying biomedical engineering. I joined iGEM because I'm deeply fascinated by synthetic biology and its potential to revolutionize medicine and healthcare. I'm excited to collaborate with like-minded individuals and contribute to innovative projects. Outside of iGEM, I enjoy playing volleyball, traveling, reading, and listening to music.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank"
+														href="mailto:ims74@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Joshua Lennon.JPG" alt="card image"></p>
+											<h4 class="card-title">Joshua Lennon</h4>
+											<p class="card-text">Product Development<br>Major: Chemical Engineering<br>Hometown: Seattle, WA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Joshua Lennon</h4>
+											<p class="card-text">Hi, I'm Josh! I am a chemical engineering major in the class of 2028. I joined iGEM due to my lifelong interesting in Synbio, and the opportunity to work collaboratively towards solutions using those skills. You can catch me chugging cold brew at Novick's and pretending to study!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank"
+														href="mailto:jsl379@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+				</div>
+			</div>
+
+			<div class="policyTeam hide">
+				<div class="row">
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Nicoletta Sodini.JPG" alt="card image"></p>
+											<h4 class="card-title">Nicoletta Sodini</h4>
+											<p class="card-text">Policy & Practices Lead<br>Major: Biology, Computer Science <br>Hometown: Chicago, IL</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Nicoletta Sodini</h4>
+											<p class="card-text">Hi! I'm Nicoletta, and I'm in the class of 2027. I am hoping to major in biology and computer science through the College of Arts and Sciences. I joined iGEM because I want to learn about the creative process and steps of solving problems using synthetic biology. On campus, I am a part of Club Water Polo and the Smart is Strong Foundation. Outside of iGEM, I like to bake with my friends and listen to music!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:nss67@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Christina Cheng.JPG" alt="card image">
+											</p>
+											<h4 class="card-title">Christina Cheng</h4>
+											<p class="card-text">Policy & Practices<br>Major: Biological Sciences<br>Hometown: Albany, NY</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Christina Cheng</h4>
+											<p class="card-text">Hello! My name is Christina and I am a Biological Sciences major concentrating in Neurobiology in CAS and the class of 2028. I joined iGEM to amplify a passions for science and synthetic biology amongst local and broader communities. Outside of iGEM, I am part of CRU and Claritas, and I love baking, going on runs outdoors, and collaging. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:cxc7@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Grace Chen.JPG" alt="card image"></p>
+											<h4 class="card-title">Grace Chen</h4>
+											<p class="card-text">Policy & Practices<br>Major: Biometry and Statistics<br>Hometown: Cleveland, OH</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Grace Chen</h4>
+											<p class="card-text">Hi, I'm Grace and I'm a Biometry and Statistics major in CALS. I joined iGEM because I was inspired by synthetic biology's endless potential and the opportunity to interact with field experts. In my free time, I enjoy working out, rearranging my room, scrolling through recipe websites, and enjoying nature.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:gyc23@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Madeline Hung.JPG" alt="card image"></p>
+											<h4 class="card-title">Madeline Hung</h4>
+											<p class="card-text">Policy & Practices<br>Major: Biological Sciences & Philosophy<br>Hometown: Saratoga, CA
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Madeline Hung</h4>
+											<p class="card-text">Hi everyone, I'm Madeline and part of the class of 2028, studying biological sciences and philosophy. I joined iGEM for the hands-on contributions I could make for its meaningful projects, specifically conducting interviews and creating outreach events for the local community! At Cornell, I'm also a part of CHC, CIPEC, HKSA, and a research lab-but during my downtime, I love video editing (in particular, my vlogs about exploring campus or other countries) and singing during carpool karaoke. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:mh2594@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Morrow Zhang.JPG" alt="card image"></p>
+											<h4 class="card-title">Morrow Zhang</h4>
+											<p class="card-text">Policy & Practices<br>Major: Biological Sciences<br>Hometown: Shenzhen, China
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Morrow Zhang</h4>
+											<p class="card-text">Hi, I am Morrow, currently a junior at CALS studying Biological Sciences. I joined iGEM, because synthetic biology has always been a fascinating field for me, and iGEM provides me with a wonderful platform to explore various aspects of it in a dynamic way. In my free time, I like to spend time in the nature and do outdoors. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:mz423@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Nicole Kim.JPG" alt="card image"></p>
+											<h4 class="card-title">Nicole Kim</h4>
+											<p class="card-text">Policy & Practices<br>Major: Biology<br>Hometown: Seattle, WA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Nicole Kim</h4>
+											<p class="card-text">Hi, my name is Nicole Kim and I'm a biological sciences major in the class of 2028! I joined iGEM to explore the endless possibilities in utilizing synthetic biology as a tool to solve real-world problems. Outside of iGEM, I make coffee as a barista and I play the violin in orchestra.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:hk966@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Ralph Ho.JPG" alt="card image"></p>
+											<h4 class="card-title">Ralph Ho</h4>
+											<p class="card-text">Policy & Practices<br>Major: Biological Sciences<br>Hometown: Irvine, CA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Ralph Ho</h4>
+											<p class="card-text">Hey, I'm RJ and I'm a sophomore in CAS! I joined PnP because I found the concept of synthetic biology very intriguing, and as someone who wants to go into the healthcare field, I was eager to contribute to a dedicated and passionate team, serving the greater community. I'm also a part of Red Cross, AED, research, and a couple fraternities. Outside of school, I enjoy messing with cameras, taking photos and making videos :)</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:rih8@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+				</div>
+			</div>
+
+			<div class="businessTeam hide">
+				<div class="row">
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Taikary Jiang.JPG" alt="card image"></p>
+											<h4 class="card-title">Taikary Jiang</h4>
+											<p class="card-text">Business Lead<br>Major: Biological Engineering<br>Hometown: Long Island, NY
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Taikary Jiang</h4>
+											<p class="card-text">Hello Hi! My name is Taikary. I am a bioengineering major, class of 2027. I 
+												joined iGem because I wanted to learn more about synthetic biology, the process of product 
+												development and bringing it to market. iGem also offers a great opportunity to make a positive 
+												social impact on our world. Outside of iGem I enjoy running, cooking and skiing.</p>
+											<ul class="list-inline">
+
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:tj297@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Aidan Larson.JPG" alt="card image">
+											</p>
+											<h4 class="card-title">Aidan Larson</h4>
+											<p class="card-text">Business<br>Major: Biological Engineering<br>Hometown: Seattle, WA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Aidan Larson</h4>
+											<p class="card-text">Hi I'm Aidan, a 2026 Biological Engineering major from Seattle, Washington. 
+												My interest in  iGEM stems from the vast potential for innovations in biotechnology to be 
+												applied in a wide variety of business contexts. Outside of iGEM, I like to read and jump 
+												rope.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:acl245@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Emily Liu.JPG" alt="card image"></p>
+											<h4 class="card-title">Emily Liu</h4>
+											<p class="card-text">Business<br>Major: Computer Science<br>Hometown: Princeton, NJ
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Emily Liu</h4>
+											<p class="card-text">Hello! My name is Emily Liu and I'm a computer science major of the class of 2027 from Princeton, NJ. I joined iGEM because I've always been passionate about biology and wanted to further explore the intersection between synthetic bio with computer science. In my free time, you'll find me playing card/board games, trying new foods, procrastinating, and/or contemplating life :D.</p>
+											<ul class="list-inline">
+
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:eyl48@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Arrth Mittal.JPG" alt="card image"></p>
+											<h4 class="card-title">Arrth Mittal</h4>
+											<p class="card-text">Business<br>Major: Biomedical Engineering<br>Hometown: Seattle, WA
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Arrth Mittal</h4>
+											<p class="card-text">I am a Biomedical Engineer interested in Business!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:am3367@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Mark Nguyen.JPG" alt="card image"></p>
+											<h4 class="card-title">Mark Nguyen</h4>
+											<p class="card-text">Business<br>Major: Bioengineering<br>Hometown: Oklahoma City, OK
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Mark Nguyen</h4>
+											<p class="card-text">Hi, my name is Mark and I am a Biological Engineering Major in CALS from the class of 2028. I joined iGem because I am fascinated with syn-bio and its applications in advancing sustainability, health, and technology. Outside of iGem I enjoy skiing, spikeball, and being a part of Cornell Lion Dance. I always wear Green and am a big OKC Thunder fan!</p>
+											<ul class="list-inline">
+
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:mhn35@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Yuxin Zou.JPG" alt="card image"></p>
+											<h4 class="card-title">Yuxin Zou</h4>
+											<p class="card-text">Business<br>Major: Human Biology, Health, and Society<br>Hometown: Baltimore, MD
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Yuxin Zou</h4>
+											<p class="card-text">Hi, my name is Yuxin! I am a Human Biology, Health, and Society major in the class of 2026. I joined iGEM because of my interests in biotechnology and its ability to integrate innovation and synthetic biology to address real-world challenges, particularly in healthcare and medicine. Additionally, iGEM's diverse community provides an incredible opportunity to collaborate and learn across interdisciplinary fields. Outside of iGEM, I enjoy exploring cafes, photography, and playing sports like badminton and lacrosse! </p>
+											<ul class="list-inline">
+
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:yz2832@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Emma Mukerji.JPG" alt="card image"></p>
+											<h4 class="card-title">Emma Mukerji</h4>
+											<p class="card-text">Business<br>Major: Biological Engineering<br>Hometown: Potomac, MD
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Emma Mukerji</h4>
+											<p class="card-text">Hi guys - I'm Emma and I'm a bioengineering major, class of 2028! I joined iGEM to explore biological solutions in a collaborative and competitive environment, especially from an industry perspective. Outside iGEM, I love going to the gym, watching movies, and fueling my coffee addiction <3</p>
+											<ul class="list-inline">
+
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:emm384@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+
+				</div>
+			</div>
+
+			<div class="wikiTeam hide">
+				<div class="row">
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Eujin Lee.JPG" alt="card image"></p>
+											<h4 class="card-title">Eujin Lee</h4>
+											<p class="card-text">Wiki Lead<br>Major: Computer Science<br>Hometown: Fairfax, VA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Eujin Lee</h4>
+											<p class="card-text">What up! My name is Eujin and I'm a CS major in the class of 2027. To me, iGEM represents the intersection of medicine and engineering. I love how students from all backgrounds come together to create something good for the world. Outside of iGEM, I'm probably struggling with my psets, singing, dancing, Taekwondoing, and doing something silly with my friends.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:el778@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Alex Peng.JPG" alt="card image"></p>
+											<h4 class="card-title">Alex Peng</h4>
+											<p class="card-text">Wiki<br>Major: Chemistry & Biology <br>Hometown: Corning, NY
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Alex Peng</h4>
+											<p class="card-text">Hi, my name is Alex Peng and I'm in the class of 2028 studying Chemistry and Biology. I joined iGEM to learn and utilize synthetic biology to solve real-world problems in new ways. I'm excited to develop my coding and work with such a great team! In my free time I love to play badminton, gaming, and hanging out. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:ap2462@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Anthony Ahn.JPG" alt="card image"></p>
+											<h4 class="card-title">Anthony Ahn</h4>
+											<p class="card-text">Wiki<br>Major: Computer Science <br>Hometown: Syracuse, NY
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Anthony Ahn</h4>
+											<p class="card-text">Hi, I'm Anthony and I'm a computer science major in the class of 2027. I joined iGem because I wanted to explore how I could use computer science to something like synthetic biology to create an impact. Outside of class, I love taking photos, working out, and hiking.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:aja282@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Audrey Fu.JPG" alt="card image"></p>
+											<h4 class="card-title">Audrey Fu</h4>
+											<p class="card-text">Wiki<br>Major: Chemical Engineering<br>Hometown: Princeton, NJ</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Audrey Fu</h4>
+											<p class="card-text">Hi! I'm Audrey, and I'm a freshman majoring in chemical engineering from Princeton, NJ. I joined iGEM because I loved how interdisciplinary it was and how I could learn about synthetic biology while doing design. Outside of iGEM, I like to nap, gamble (open pokemon packs and blindboxes), and drink boba (hmu if you need recs!!).</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:af643@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Nicole Zhu.JPG" alt="card image">
+											</p>
+											<h4 class="card-title">Nicole Zhu</h4>
+											<p class="card-text">Wiki<br>Major: Biology<br>Hometown: New York, NY</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Nicole Zhu</h4>
+											<p class="card-text">Hi! My name is Nicole and I'm in the class of 2028 studying Biology. I joined iGEM to explore my interests in applying synthetic biology to real world issues. I am excited to apply my interest in both design and biology with iGEM. In my free time I like to paint, sew, and make jewelry!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:nz274@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Winnie Lin.JPG" alt="card image"></p>
+											<h4 class="card-title">Winnie Lin</h4>
+											<p class="card-text">Wiki<br>Major: Computer Science<br>Hometown: Manhattan, NY
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Winnie Lin</h4>
+											<p class="card-text">Hi, I'm Winnie, a CS '27 major in COE from NYC. I joined iGEM to explore synbio and learn about its impactful. Outside of iGem, I enjoy hanging out with my CSA fam, trying new food and listening to music.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:wl686@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Team member -->
+
+				</div>
+			</div>
+
+			<div class="mentorsAdvisors hide">
+				<div class="row">
+					
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/advisors/Prof Cira.png" alt="card image"></p>
+											<h4 class="card-title">Professor Nate Cira</h4>
+											<p class="card-text">Faculty Advisor<br>Assistant Professor<br>Department of Biomedical Engineering
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Professor Nate Cira</h4>
+											<p class="card-text">Hi there. I'm Prof. Nate Cira. I'm an enthusiastic iGEM supporter and help support Cornell's team as the faculty advisor. I also run the Cira Lab at Cornell, where we work on a wide range of science and engineering topics, usually connected to human health. I was an iGEM participant as a student in '09 and '10. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:njc222@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/advisors/Prof Saikia.png" alt="card image"></p>
+											<h4 class="card-title">Professor Mridusmita Saikia</h4>
+											<p class="card-text">Faculty Advisor<br>Lecturer<br>Department of Biomedical Engineering
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Professor Mridusmita Saikia</h4>
+											<p class="card-text">Hello everyone, I am Mridu. I am a faculty at the Meinig School of Biomedical Engineering.  My research interests include molecular biology and genomics. I love being a part of iGem Cornell as it allows me to continue pursuing my research interests as well as connect with my students outside the classroom. When I am not working, I enjoy traveling and reading. Recently I traveled to Napoli, Italy and visited the ruins of Pompeii. It was the most engrossing and enriching experience!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:ms2855@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/advisors/Yannis Ntekas.jpeg" alt="card image"></p>
+											<h4 class="card-title">Yannis Ntekas</h4>
+											<p class="card-text">Graduate Mentor<br>PhD Student, De Vlaminck Lab<br>Department of Biomedical
+												Engineering</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Yannis Ntekas</h4>
+											<p class="card-text"> </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:in68@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Jaymee Palma.JPG" alt="card image"></p>
+											<h4 class="card-title">Jaymee Palma</h4>
+											<p class="card-text">Graduate Mentor<br>PhD Student<br>Biochemistry</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Jaymee Palma</h4>
+											<p class="card-text">Hi! My name is Jaymee, I am a PhD student in the field of Biochemistry, 
+												Molecular and Cell Biology with a research focus on protein engineering and synthetic 
+												biology. I joined iGEM as a mentor because it's an exciting opportunity to guide and 
+												support aspiring scientists. I'm looking forward to helping the Cornell iGEM team this 
+												year!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+
+												</li>
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:jp2325@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Cameron Meyer.JPG" alt="card image">
+											</p>
+											<h4 class="card-title">Cameron Meyer</h4>
+											<p class="card-text">Student Advisor<br>Major: Biology and Society<br>Hometown: Alamo, CA
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Cameron Meyer</h4>
+											<p class="card-text">Hi, my name is Cameron and I'm majoring in Biology & Society and Economics. IGEM has given me the opportunity to explore the exciting intersection of business and biology. Outside of iGEM I enjoy playing tennis and mountain biking.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:cam554@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Isaac Chang.JPG" alt="card image"></p>
+											<h4 class="card-title">Isaac Chang</h4>
+											<p class="card-text">Student Advisor<br>Major: Nutritional Sciences<br>Hometown: Saratoga, CA
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Isaac Chang</h4>
+											<p class="card-text">Hey! I'm Isaac Chang, an undergraduate in the Class of 2025 studying Nutritional Sciences from Saratoga, California. I joined iGEM for its collaborative and entrepreneurial approach to applying biology to solving real-world problems. On campus, I'm a managing editor for the Cornell Undergraduate Research Journal, a LSC tutor, and a researcher in the Hay Lab. I enjoy playing basketball, trying new cuisines, and crafting kombucha in my free time!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" href="mailto:ijc29@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Ishaan Nanal.JPG" alt="card image"></p>
+											<h4 class="card-title">Ishaan Nanal</h4>
+											<p class="card-text">Student Advisor<br>Major: Computer Science, Business<br>Hometown:
+												San Jose, CA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Ishaan Nanal</h4>
+											<p class="card-text">Hi! I'm Ishaan and I'm studying CS and Business as part of the class 
+												of 2026. I joined iGEM because I wanted to learn more about synthetic biology. This 
+												is a field full of startups that are innovating and reshaping the landscape of the 
+												industry and I want to learn more about the process behind creating a product and 
+												bringing it to market. I also enjoy listening to music, rock climbing, skiing, and 
+												playing basketball.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:isn6@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Jatin Mukerji.JPG" alt="card image"></p>
+											<h4 class="card-title">Jatin Mukerji</h4>
+											<p class="card-text">Student Advisor<br>Major: Biological Engineering<br>Hometown: Potomac, MD
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Jatin Mukerji</h4>
+											<p class="card-text">My name is Jatin Mukerji. I'm studying Biological Engineering (BEE) as a part of the class of 2025 and am serving as PD lead for this year's project. Outside of iGEM, I do research for the BEE department and am Vice President at Delta Tau Delta (DTD). In my free time, I enjoy video games, rock climbing, and listening to all kinds of music (Favorite artists: Springsteen, Gaslight Anthem, Zach Bryan)!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:jam834@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Michael Constant.JPG" alt="card image"></p>
+											<h4 class="card-title">Michael Constant</h4>
+											<p class="card-text">Student Advisor<br>Major: Chemical Engineering<br>Hometown: Manassas, VA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Michael Constant</h4>
+											<p class="card-text">Hey guys, I'm Michael and I'm a chemical engineering major in the class of 2025! I joined iGEM to be part of a fun and social community that creates amazing projects that can help people and I fell in love with the genetic aspect of the team! Other than iGEM, I'm also in the marching band, the DeLisa Lab, the engineering ambassador program, and Alpha Chi Sigma! I also love to do photography and find new music in my free time!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:mjc456@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Rachel Cannata.JPG" alt="card image"></p>
+											<h4 class="card-title">Rachel Cannata</h4>
+											<p class="card-text">Student Advisor<br>Major: Hotel Administration<br>Hometown: New Orleans, LA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Rachel Cannata</h4>
+											<p class="card-text">Hi! My name is Rachel and I'm a Hotelie in the class of 2025. I joined iGem because it's such an inclusive, multi-disciplinary environment that welcomes creative thinking. Outside of iGem, I like to read, knit, and write for the Cornell Daily Sun. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:rgc96@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Kaitlin Chung.JPG" alt="card image"></p>
+											<h4 class="card-title">Kaitlin Chung</h4>
+											<p class="card-text">Student Advisor<br>Major: Biological Sciences<br>Hometown: Corning, NY
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Kaitlin Chung</h4>
+											<p class="card-text">Hi! I'm Kaitlin Chung, and I'm a Biological Sciences major in CAS and the Class of 2026! I joined iGEM to learn more about the real-world impact of synthetic biology and science communication. Outside of iGEM, I'm also involved on campus in The Cornell Daily Sun, a research lab, and as a TA for BIOMG 2800. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:khc73@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Claire Lupien.JPG" alt="card image"></p>
+											<h4 class="card-title">Claire Lupien</h4>
+											<p class="card-text">Student Advisor<br>Major: Biological Engineering<br>Hometown: Winchester, MA
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Claire Lupien</h4>
+											<p class="card-text">Hi! I'm Claire and I'm a biological engineering major in the class of 2027. I joined iGEM because of my interest in how synthetic biology can help solve pressing issues in sustainability and healthcare. Outside of iGEM, I'm a part of club tennis and YOURS volunteer group. I love spending time with friends, hiking, trying new foods, and getting coffee (you can often find me at Zeus or Gimme)! </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:cal367@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Sophie Shadid.JPG" alt="card image"></p>
+											<h4 class="card-title">Sophie Shadid</h4>
+											<p class="card-text">Student Advisor<br>Major: Interdisciplinary Studies - Pharmacology <br>Hometown: Denver, CO
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Sophie Shadid</h4>
+											<p class="card-text">Hi! I'm Sophie and I'm an interdisciplinary studies major in CALS concentrating in pharmacology and chemical biology. I joined iGEM to apply my interests in novel synthetic biology and to meet peers who are also preparing for careers in biotechnology and pharmaceutical development. Outside of iGEM, you can find me doing film photography, working out, and skiing. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:ses392@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Rita Kelly.JPG" alt="card image"></p>
+											<h4 class="card-title">Rita Kelly</h4>
+											<p class="card-text">Student Advisor<br>Major: Biomedical Engineering <br>Hometown: Farmington, CT
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Rita Kelly</h4>
+											<p class="card-text">Hi! My name is Rita, and I am a biomedical engineering major in the class of 2026. I love being a member of iGEM because of the opportunities to learn and build cool things as well as the amazing community! When I'm not taste testing the mysterious chemicals in Ward Lab, you can find me at my job at Mann Library, rehearsing with my a cappella group, locked in my room grinding psets, or waiting in line for coffee at the nearest BRB cafe. </p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:rjk287@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2025/Ryan Tse.JPG" alt="card image"></p>
+											<h4 class="card-title">Ryan Tse</h4>
+											<p class="card-text">Student Advisor<br>Major: Biological Engineering <br>Hometown: Hong Kong
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Ryan Tse</h4>
+											<p class="card-text">Hi everyone, my name is Ryan, and I am a member of the Class of 2027 from Hong Kong! I am currently studying biological engineering, and so I joined iGem in hopes of being able to apply my skills to create products solutions that will actually make a genuine impact on the world! Outside the classroom I enjoy playing the guitar, being active with my friends, and spending time with my very cute dog (feel free to contact me if you want to see my dog)!</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:ct667@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+					<!-- Advisor -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body text-center">
+											<p><img class=" img-fluid" src="images/headshots_2024/Adelynn Wu.JPG" alt="card image"></p>
+											<h4 class="card-title">Adelynn Wu</h4>
+											<p class="card-text">Student Advisor<br>Major: Computer Science <br>Hometown: Taiwan
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body text-center mt-4">
+											<h4 class="card-title">Adelynn Wu</h4>
+											<p class="card-text">Hi everyone, I am Adelynn, and I a computer science major in the class of 2027. I joined iGEM to explore the infinite possibilities of synbio  and solve real-world problems with this group of amazing people. Outside of school, I enjoy listening to J-pop, cooking, and writing my travel journal.</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a class="social-icon text-xs-center" target="_blank" href="mailto:hw769@cornell.edu">
+														<i class="fa fa-envelope"></i>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ./Advisor -->
+
+
+				</div>
+			</div>
+
+			<div class="alumniList hide">
+				<h2 style="text-align:center">Class of 2024</h2>
+				<div class="row">
+			<!--Alumni-->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="alumnicard">
+						<div class="card">
+							<div class="card-body text-center">
+								<p><img class=" img-fluid" src="images/alumni/Elena Joseph.jpeg" alt="card image"></p>
+								<h4 class="card-title">Elena Joseph</h4>
+								<p class="card-text">Sales Engineer, IBM<br>B.A. Information Science (Information Ethics, Law and Policy)</p>
+								<ul class="list-inline">
+									<li class="list-inline-item">
+									</li>
+									<li class="list-inline-item">
+										<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/elena-joseph-745596172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--./Alumni-->	
+
+			<!--Alumni-->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="alumnicard">
+						<div class="card">
+							<div class="card-body text-center">
+								<p><img class=" img-fluid" src="images/alumni/Emma Taigounov.jpg" alt="card image"></p>
+								<h4 class="card-title">Emma Taigounov</h4>
+								<p class="card-text">Masters Student, Cornell University<br>B.S. Biomedical Engineering</p>
+								<ul class="list-inline">
+									<li class="list-inline-item">
+									</li>
+									<li class="list-inline-item">
+										<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/emma-taigounov">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--./Alumni-->	
+
+			<!--Alumni-->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="alumnicard">
+						<div class="card">
+							<div class="card-body text-center">
+								<p><img class=" img-fluid" src="images/headshots_2023/Jacob Novozhenets.jpg" alt="card image"></p>
+								<h4 class="card-title">Jacob Novozhenets</h4>
+								<p class="card-text">Management Consultant<br>B.S. Biological Engineering</p>
+								<ul class="list-inline">
+									<li class="list-inline-item">
+									</li>
+									<li class="list-inline-item">
+										<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/jacobnovozhenets">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--./Alumni-->	
+
+			<!--Alumni-->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="alumnicard">
+						<div class="card">
+							<div class="card-body text-center">
+								<p><img class=" img-fluid" src="images/alumni/Nayal Zaidi.jpeg" alt="card image"></p>
+								<h4 class="card-title">Nayal Zaidi</h4>
+								<p class="card-text">Bioanalytical Sciences, Regeneron<br>B.S. Biomedical Engineering</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--./Alumni-->		
+
+			<!--Alumni-->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="alumnicard">
+						<div class="card">
+							<div class="card-body text-center">
+								<p><img class=" img-fluid" src="images/alumni/Srishti Khetan.jpeg" alt="card image"></p>
+								<h4 class="card-title">Srishti Khetan</h4>
+								<p class="card-text">PhD Student, Columbia University<br>B.S. Biomedical Engineering</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--./Alumni-->
+
+			<!--Alumni-->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="alumnicard">
+						<div class="card">
+							<div class="card-body text-center">
+								<p><img class=" img-fluid" src="images/alumni/Tram Huynh.jpg" alt="card image"></p>
+								<h4 class="card-title">Tram Huynh</h4>
+								<p class="card-text">Pre-Physician Assistant<br>B.A. Biological Sciences</p>
+								<ul class="list-inline">
+									<li class="list-inline-item">
+									</li>
+									<li class="list-inline-item">
+										<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/tramhuy">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--./Alumni-->	
+				</div>
+				
+
+				<h2 style="text-align:center">Class of 2023</h2>
+				<div class="row">
+					<!--Alumni-->
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="alumnicard">
+								<div class="card">
+									<div class="card-body text-center">
+										<p><img class=" img-fluid" src="images/alumni/Daniel Morgan.png" alt="card image"></p>
+										<h4 class="card-title">Daniel Morgan</h4>
+										<p class="card-text">Research Portfolio Manager, Mission: Cure<br>B.S. Biological Engineering, M.S. Biomedical Engineering</p>
+										<ul class="list-inline">
+											<li class="list-inline-item">
+											</li>
+											<li class="list-inline-item">
+												<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/danielmorgan23">
+													<i class="fa fa-linkedin"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--./Alumni-->	
+
+				<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Deniz Sinar.JPG" alt="card image"></p>
+									<h4 class="card-title">Deniz Sinar</h4>
+									<p class="card-text">Bioengineering PhD Student, Stanford University<br>B.S. Biological Engineering</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/denizsinar">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!--./Alumni-->	
+
+				<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Margaret Keymakh.jpeg" alt="card image"></p>
+									<h4 class="card-title">Margaret Keymakh</h4>
+									<p class="card-text">Masters Student, Albert Einstein College of Medicine<br>B.A. Biological Sciences (Microbiology)</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/margaret-keymakh-003168207">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!--./Alumni-->	
+
+				<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Rocky An.jpg" alt="card image"></p>
+									<h4 class="card-title">Rocky An</h4>
+									<p class="card-text">Bioengineering PhD Student, Stanford University<br>B.S. Mechanical Engineering, B.S. Biological Engineering</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/rockyan">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!--./Alumni-->	
+
+				<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Xihang Wang.JPG" alt="card image"></p>
+									<h4 class="card-title">Xihang Wang</h4>
+									<p class="card-text">Medical Student, Johns Hopkins School of Medicine<br>B.A. Biological Sciences, B.A. Economics</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!--./Alumni-->	
+				</div>
+
+
+				<h2 style="text-align:center">Class of 2022</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Benedict Ho</h4>
+									<p class="card-text">MD Candidate, Weill Cornell Medicine<br>B.A. Psychology, B.A. Biological Sciences</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="alumnicard">
+								<div class="card">
+									<div class="card-body text-center">
+										<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+										<h4 class="card-title">Gabby Lee</h4>
+										<p class="card-text">Strategy and Transactions Associate, EY<br>B.S. Applied Economics and Management</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="alumnicard">
+								<div class="card">
+									<div class="card-body text-center">
+										<p><img class=" img-fluid" src="images/alumni/Hannah Lim.JPG" alt="card image"></p>
+										<h4 class="card-title">Hannah Lim</h4>
+										<p class="card-text">Bioengineering PhD student, Rice University<br>B.S. Mechanical Engineering, B.S. Biological Engineering</p>
+										<ul class="list-inline">
+											<li class="list-inline-item">
+											</li>
+											<li class="list-inline-item">
+												<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/hannah-lim-0616">
+													<i class="fa fa-linkedin"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Jackson Bauer</h4>
+									<p class="card-text">Cell and Molecular Biology - Gene Therapy and Vaccines PhD Student, University of Pennsylvania<br>B.S. Biomedical Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Jade Pinkenburg</h4>
+									<p class="card-text">Electrical Engineering PhD Student, UC Berkeley<br>B.S. Electrical and Computer Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Leo Song.jpeg" alt="card image"></p>
+									<h4 class="card-title">Leo Song</h4>
+									<p class="card-text">Medical Student, UCLA<br>B.S. Biological Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Lindsey Luo.jpeg" alt="card image"></p>
+									<h4 class="card-title">Lindsey Luo</h4>
+									<p class="card-text">Product Manager, Blackstone<br>B.S. Computer Science</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Lucas Evans.jpeg" alt="card image"></p>
+									<h4 class="card-title">Lucas Evans</h4>
+									<p class="card-text">Medical Laboratory Scientist, Beth Israel Deaconess Medical Center<br>B.A. Biological Sciences, B.A. Psychology</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/lucas-evans-0880211b5/">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Rachel Marsh.jpg" alt="card image"></p>
+									<h4 class="card-title">Rachel Marsh</h4>
+									<p class="card-text">Investment Banking Analyst, JP Morgan<br>B.S. Operations Research and Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Swasti Shree</h4>
+									<p class="card-text">Process Development Engineer, Boston Scientific<br>B.S. Mechanical Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+				</div>
+
+				<h2 style="text-align:center">Class of 2021</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Ann Metzloff</h4>
+									<p class="card-text">Bioengineering Ph.D. Student, University of Pennsylvania<br>B.S. Chemical Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Behram Khan</h4>
+									<p class="card-text">M.D. Candidate, Albert Einstein College of Medicine<br>B.A. Biological Sciences and Anthropology</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Charles Dai</h4>
+									<p class="card-text">Masters Student, Harvard Divinity School<br>B.S. Computer Science and Biology</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Jackie Zheng</h4>
+									<p class="card-text">Software Development Engineer, Amazon<br>B.S. Computer Science</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Longsha Liu</h4>
+									<p class="card-text">Current CEO, Co-Founder, Vita Innovations & Medical Student, Stanford University<br>B.A. Biology</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Michelle Croen.jpeg" alt="card image"></p>
+									<h4 class="card-title">Michelle Croen</h4>
+									<p class="card-text">Scientist, Merck & Co.<br>B.S. Biological Engineering</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/michelle-croen/">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Olivia Qiu.jpeg" alt="card image"></p>
+									<h4 class="card-title">Olivia Qiu</h4>
+									<p class="card-text">GTM Strategy & Operations Associate, Datadog<br>B.A. Biological Sciences</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/olivia-qiu-7b55a9172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Rachel George.jpeg" alt="card image"></p>
+									<h4 class="card-title">Rachel George</h4>
+									<p class="card-text">M.D. Candidate, UNC School of Medicine<br>B.S. Biomedical Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Sophia Windemuth.jpeg" alt="card image"></p>
+									<h4 class="card-title">Sophia Windemuth</h4>
+									<p class="card-text">Biomedical Engineering PhD Candidate, Columbia University<br>B.S. Biomedical Engineering, B.S. Computer Science (Cornell University),
+										M.S. Biomedical Engineering (Columbia University)</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/olivia-qiu-7b55a9172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+				</div>
+
+				<h2 style="text-align:center">Class of 2020</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Ashwin Viswanathan</h4>
+									<p class="card-text">MD-PhD Student, Columbia University Vagelos College of Physicians & Surgeons<br>B.A. Biology (Neurobiology) and
+										Government</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Avisha Kumar.png" alt="card image"></p>
+									<h4 class="card-title">Avisha Kumar</h4>
+									<p class="card-text">PhD Student, Johns Hopkins University<br>B.S. and M.Eng Electrical and Computer Engineering</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/avishakumar21">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Darren Tsai.jpg" alt="card image"></p>
+									<h4 class="card-title">Darren Tsai</h4>
+									<p class="card-text">Assistant Vice President (Product Manager), Blackstone<br>B.S. Computer Science</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/darren-tsai">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+				</div>
+			
+				<h2 style="text-align:center">Class of 2019</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Carol Hung.jpg" alt="card image"></p>
+									<h4 class="card-title">Carol Hung</h4>
+									<p class="card-text">Sr. Product Manager, Noah Medical (Medical Robotics)<br>B.S. Biomedical Engineering</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/carolkhung">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Connie Li.jpeg" alt="card image"></p>
+									<h4 class="card-title">Connie Li</h4>
+									<p class="card-text">Law Student, Stanford Law School<br>B.S. Chemical Engineering</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/connieli7">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Cristina Zhao</h4>
+									<p class="card-text">Data Systems Engineer, Toast<br>B.S. Information Science, Systems, and Technology</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Greg Albano</h4>
+									<p class="card-text">Law Student, Harvard Law School<br>B.S. Bioengineering, M. Eng. Biomedical Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Max Zhou.jpg" alt="card image"></p>
+									<h4 class="card-title">Max Zhou</h4>
+									<p class="card-text">Machine Learning Engineer, YouTube<br>B.S. Biological Engineering & B.S. Computer Science</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" href="mailto:mz6343@gmail.com">
+												<i class="fa fa-envelope"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Rohit Bandaru.jpeg" alt="card image"></p>
+									<h4 class="card-title">Rohit Bandaru</h4>
+									<p class="card-text">Software Engineer, Google<br>B.S. Computer Science, M.Eng. Computer Science</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/rohit-bandaru">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+				</div>
+
+				<h2 style="text-align:center">Class of 2018</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Saie Ganoo</h4>
+									<p class="card-text">Design Researcher, Deloitte<br>B.S. Biological Engineering, M.Eng Biomedical Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+				</div>
+			
+				<h2 style="text-align:center">Class of 2017</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/George Danias.jpg" alt="card image"></p>
+									<h4 class="card-title">George Danias</h4>
+									<p class="card-text">Resident Physician in Psychiatry, NYU-Langone<br>B.S. Biological Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Reed Geisler.jpg" alt="card image"></p>
+									<h4 class="card-title">Reed Geisler</h4>
+									<p class="card-text">Resident Physician (Anesthesiology), Yale<br>B.A. Chemistry and Chemical Biology, B.A. Biological Sciences, M.Eng. Biomedical Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Rishabh Singh</h4>
+									<p class="card-text">Ophthalmology Resident Physician, Columbia
+										University Medical Center<br>B.S. Biological Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+				</div>
+
+				<h2 style="text-align:center">Class of 2014</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Youjin Cho.jpg" alt="card image"></p>
+									<h4 class="card-title">Youjin Cho</h4>
+									<p class="card-text">General Surgery Resident, UCSF<br>B.S. Biological Engineering (Cornell University), Ph.D.
+										Biomedical Engineering (The Ohio State University)</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/youjin-angela-cho-009b4539">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+				</div>
+
+				<h2 style="text-align:center">Class of 2013</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/alumni/Caleb Radens.jpg" alt="card image"></p>
+									<h4 class="card-title">Caleb Radens</h4>
+									<p class="card-text">Scientific Investigator, GSK<br>B.A. Molecular & Cell Biology</p>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										</li>
+										<li class="list-inline-item">
+											<a class="social-icon text-xs-center" target="_blank" href="https://www.https://www.linkedin.com/in/calebradens">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Charlie Chung</h4>
+									<p class="card-text">Clinical Assistant Professor (Attending) in OB/GYN, Univ. of Wisconsin School of Medicine<br>B.A. Molecular & Cell Bio (Cornell University), M.D. (Univ. of Massachusetts Medical School)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Mark Simpson</h4>
+									<p class="card-text">Functional Genomics Scientist, InVitro Cell Research LLC
+										<br>B.S. Bioengineering (Cornell University), M.Eng. Biomedical
+										Engineering (Cornell University),
+										Ph.D. Molecular Biology Genetics and Cancer (Rutgers New Jersey Medical School), M.D. Medicine (Rutgers New
+										Jersey Medical School)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+				</div>
+
+				<h2 style="text-align:center">Class of 2012</h2>
+				<div class="row">
+					<!--Alumni-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="alumnicard">
+							<div class="card">
+								<div class="card-body text-center">
+									<p><img class=" img-fluid" src="images/headshots_2023/blank.jpg" alt="card image"></p>
+									<h4 class="card-title">Dylan Webster</h4>
+									<p class="card-text">Director of Software Product, 10x Genomics
+										<br>B.S. Biological Engineering, M.Eng. Biological Engineering</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--./Alumni-->	
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<script>
+		function selectSubteam(teamName, element) {
+			document.getElementsByClassName("wetLabTeam")[0].classList.add("hide");
+			document.getElementsByClassName("productTeam")[0].classList.add("hide");
+			document.getElementsByClassName("policyTeam")[0].classList.add("hide");
+			document.getElementsByClassName("businessTeam")[0].classList.add("hide");
+			document.getElementsByClassName("wikiTeam")[0].classList.add("hide");
+			document.getElementsByClassName("mentorsAdvisors")[0].classList.add("hide");
+			document.getElementsByClassName("alumniList")[0].classList.add("hide");
+			document.getElementsByClassName(teamName)[0].classList.remove("hide");
+
+			var navItems = document.getElementById("subteamNav").getElementsByTagName("li");
+			for (var i = 0; i < navItems.length; i++) {
+				navItems[i].classList.remove("active");
+			}
+			element.classList.add("active");
+		}
+	</script>
+
+
+	<!--- Alumni Section -->
+
+	<div class="container alumni">
+		<h1> Our Alumni </h1>
+		<p> Our alumni have gone out from iGEM into a variety of fields. Check out where they are now:
+		</p>
+		<div class="firstAlumList">
+			<ul>
+				<li>Microsoft
+				</li>
+				<li>Google
+				</li>
+				<li>Amazon
+				</li>
+				<li>Ginkgo Bioworks
+				</li>
+				<li>Regeneron
+				</li>
+				<li>ExxonMobile
+				</li>
+				<li>Deloitte
+				</li>
+			</ul>
+		</div>
+		<div class="secondAlumList">
+			<ul>
+				<li>Howard Hughes Medical Institute
+				</li>
+				<li>The Blackstone Group
+				</li>
+				<li>Broadway Technology
+				</li>
+				<li>Massachusetts Institute of Technology
+				</li>
+				<li>Case Western Reserve University School of Medicine
+				</li>
+				<li>Harvard Law School
+				</li>
+				<li>The John Hopkins University School of Medicine
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<!--/************************* FOOTER ************************************/ -->
+
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+			<img src="images/logo/logo_new.png" width="200" alt="logo">
+
+			<p class="footer-links">
+				<a href="index.html">Home</a>
+				|
+				<a href="about.html">About</a>
+				|
+				<a href="team.html">Team</a>
+				|
+				<a href="apply.html">Apply</a> 
+				|
+				<a href="faq.html">FAQ</a> 
+				|
+                <a href="donate.html">Donate</a>
+			</p>
+
+			<p class="footer-company-name">&copy; 2025 Cornell iGEM Project Team</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>Cornell University
+					</span>
+					Ithaca, New York - 14853</p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a></p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<p class="footer-company-about">
+				Designed and created by current Wiki Subteam Leads | Built upon the work of past Wiki Leads | This organization is a registered student organization of Cornell University. | <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">Equal Education and Employment (EEEO) Statement</a></p>
+			<div class="footer-icons">
+				<a href="https://facebook.com/cornelligem"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/cugem"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/cugem/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/company/cornell-igem"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.youtube.com/user/CornelliGEM/"><i class="fa fa-youtube"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="http://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>

@@ -1,0 +1,1417 @@
+/*** General Styling ***/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 35px;
+}
+
+h2,
+h4,
+h5 {
+    font-family: 'Raleway';
+    color: #616161;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-size: 36px;
+}
+
+h4 {
+    font-family: 'Raleway';
+    color: #616161;
+    font-size: 24px;
+}
+
+h6 {
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-size: 36px;
+}
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 18px;
+}
+
+a {
+    color: #607D8B;
+}
+
+
+
+
+/*** Navbar Styling ***/
+
+.navbar {
+    font-size: 18px;
+    background-color: #F5F5F5;
+    border: none;
+    color: #333333;
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, .2);
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+    color: #333333;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: #333333;
+}
+
+.main-nav {
+    text-align: center;
+    border-top: 2px solid #333333;
+    width: 100%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: auto 20px auto;
+    position: relative;
+    color: #333333;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #333333;
+    font-size: 24px;
+}
+
+.activenav {
+    display: block;
+    color: #607D8B;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 60px;
+        align-items: center;
+        color: #333333;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: #333333;
+        border: none;
+        margin-top: 0px;
+    }
+
+    .main-nav li {
+        margin: 0px;
+        color: #333333;
+        margin-top: -45px;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+        color: #333333;
+        margin-top: 0px;
+    }
+
+    .logo {
+        margin-top: 0;
+        color: #333333;
+    }
+
+    .navbar-toggle {
+        display: none;
+        color: #333333;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: #607D8B;
+        text-decoration: none;
+    }
+
+    .activenav {
+        color: #607D8B;
+        font-weight: 600;
+    }
+}
+
+
+/*** Banner Styling ***/
+
+.home-banner-large-container {
+    padding-top: 110px;
+}
+
+.home-banner-container {
+    width: 100%;
+    position: relative;
+    margin: -55px 0;
+}
+
+
+/* Hide the images by default */
+
+.home-slides {
+    display: none;
+}
+
+.slidesauto {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 50px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-banner-large-container {
+        padding-top: 130px;
+    }
+}
+
+
+/*********** Homepage Tagline *************/
+
+.homePageTag p {
+    font-family: 'Raleway';
+    color: #616161;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: -10px;
+}
+
+
+/************************* OUR CURRENT WORK ************************************/
+
+.currentWork {
+    background-color: #F5F5F5;
+}
+
+.currentWork h1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+}
+
+.currentWorkItems {
+    display: inline-block;
+}
+
+
+/* on PC */
+
+@media screen and (min-width: 768px) {
+    .currentWorkImg {
+        float: left;
+        width: 37%;
+        padding-left: 10%;
+        padding-top: 9%;
+    }
+
+    .currentWorkImg img {
+        width: 100%;
+    }
+
+    .currentWorkText {
+        float: left;
+        width: 63%;
+        padding-right: 10%;
+        padding-left: 2.5%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/* on Mobile */
+
+@media screen and (max-width: 768px) {
+    .currentWorkImg {
+        width: 90%;
+    }
+
+    .currentWorkImg img {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 20px;
+    }
+
+    .currentWorkText {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .currentWork h1 {
+        padding-left: 5%;
+    }
+}
+
+
+/* Popup box BEGIN */
+
+.hover_bkgr_fricc {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.hover_bkgr_fricc .helper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hover_bkgr_fricc>div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 70%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+    margin-top: 50px;
+}
+
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+.season-goals {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+/* Popup box BEGIN */
+
+
+/************************* PAST PROJECTS AND ACHIEVEMENTS ************************************/
+
+.circle {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+}
+
+.pastProjects h1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+}
+
+
+/**ACCORDIAN**/
+
+.accordion {
+    width: 100%;
+    max-width: 1080px;
+    height: 350px;
+    overflow: hidden;
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion>ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion>ul>li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease;
+}
+
+.accordion>ul>li>div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion>ul>li>div>a {
+    display: block;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Raleway';
+    transition: all 200ms ease;
+}
+
+.accordion>ul>li>div>a>* {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.accordion>ul>li>div>a>h6 {
+    text-overflow: clip;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 74px;
+}
+
+.accordion>ul>li>div>a>p {
+    top: 90px;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.accordion>ul>li>div>a>ul {
+    top: 110px;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.accordion>ul>li>div>a>b {
+    top: 100px;
+    font-size: 19px;
+    font-family: 'Raleway';
+}
+
+@media screen and (min-width: 950px) {
+    .accordion>ul:hover>li {
+        width: 8%;
+    }
+
+    .accordion>ul:hover>li:hover {
+        width: 60%;
+    }
+
+    .accordion>ul:hover>li:hover a {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .accordion>ul:hover>li:hover a * {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 949px) {
+    body {
+        margin: 0;
+    }
+
+    .accordion {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .accordion>ul>li {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        margin: 0 auto;
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .accordion>ul>li>div>a {
+        background: rgba(0, 0, 0, 0.4);
+        margin: 0 auto;
+        width: 100%
+    }
+
+    .accordion>ul>li>div>a>* {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .accordion>ul>li>div>a>h6 {
+        top: 84px;
+    }
+
+    .accordion>ul>li>div>a>p {
+        top: 100px;
+    }
+
+    .accordion>ul>li>div>a>ul {
+        top: 120px;
+    }
+
+    .accordion>ul>li>div>a>b {
+        top: 110px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .accordion>ul>li>div>a>h6 {
+        top: 34px;
+        font-size: 28px;
+    }
+
+    .accordion>ul>li>div>a>p {
+        top: 50px;
+        font-size: 14px;
+    }
+
+    .accordion>ul>li>div>a>ul {
+        top: 70px;
+        font-size: 14px;
+    }
+
+    .accordion>ul>li>div>a>b {
+        top: 60px;
+        font-size: 17px;
+    }
+}
+
+
+/* iPhone 5 */
+
+@media screen and (max-width: 350px) {
+    .accordion>ul>li>div>a>h6 {
+        top: 19px;
+        font-size: 28px;
+    }
+
+    .accordion>ul>li>div>a>p {
+        top: 35px;
+        font-size: 13px;
+    }
+
+    .accordion>ul>li>div>a>ul {
+        top: 55px;
+        font-size: 13px;
+    }
+
+    .accordion>ul>li>div>a>b {
+        top: 45px;
+        font-size: 16px;
+    }
+}
+
+
+/***************** Donate **********************/
+
+.donate {
+    background-color: #f5f5f5;
+}
+
+.donateHeader {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+}
+
+.donateText {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.btn-secondary {
+    background-color: #607D8B;
+    border: none;
+    margin-left: 80%;
+}
+
+.btn-donate {
+    background-color: #607D8B;
+    border: none;
+    margin-left: 20%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .btn-secondary {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .btn-donate {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .buttonDiv {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/***************** FAQ **********************/
+
+.faq {
+    background-color: #f5f5f5;
+}
+
+.faqHeader {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+}
+
+.faqText {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.example {
+    padding-left: 35px;
+}
+
+/***************** Sponsors **********************/
+
+.sponsors {
+    padding: 50px 150px;
+}
+
+.panel-body {
+    padding-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    padding-bottom: 50px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 10px 10px;
+}
+
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .sponsors {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .sponsors {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/******* Footer ********/
+
+footer {
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: 'Raleway';
+    font: 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #333333;
+    font: normal 36px 'Raleway', cursive;
+    margin: 0;
+}
+
+
+/* The company logo */
+
+.footer-distributed h3 span {
+    color: #607D8B;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #333333;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #607D8B;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #333333;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #607D8B;
+    text-decoration: none;
+    ;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #607D8B;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* Here is the code for Responsive Footer */
+
+
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 880px) {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+
+/*******************ABOUT**********************/
+
+.about-intro {
+    padding-top: 20px;
+}
+
+.synBio h1 {
+    padding-top: 50px;
+}
+
+.synBio ul {
+    padding-left: 50px;
+}
+
+.synBio p {
+    padding-top: 30px;
+}
+
+.jamboree {
+    padding-top: 50px;
+}
+
+.giantJamboree {
+    display: inline-block;
+}
+
+
+/* on PC */
+
+@media screen and (min-width: 768px) {
+    .jamboreeImg1 {
+        float: left;
+        width: 40%;
+        padding-top: 35px;
+    }
+
+    .jamboreeImg1 img {
+        width: 100%;
+    }
+
+    .jamboreeText1 {
+        float: left;
+        width: 60%;
+        padding-left: 2.5%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+.jamboreeImg2 {
+    float: right;
+    width: 45%;
+}
+
+.jamboreeImg2 img {
+    width: 100%;
+}
+
+.jamboreeText2 {
+    float: left;
+    width: 55%;
+    padding-right: 2.5%;
+}
+
+
+/* on Mobile */
+
+@media screen and (max-width: 768px) {
+    .jamboreeImg1 .jamboreeImg2 {
+        width: 90%;
+    }
+
+    .jamboreeImg1 .jamboreeImg2 img {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 20px;
+    }
+
+    .jamboreeText2 .jamboreeText2 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .jamboree h1 {
+        padding-left: 5%;
+    }
+}
+
+.subteams .nav {
+    margin-top: 40px;
+}
+
+#aboutNav {
+    margin-bottom: 40px;
+}
+
+#aboutNav .active {
+    border-radius: 25px;
+    background-color: #F5F5F5;
+}
+
+#aboutNav .active a {
+    color: #607D8B;
+}
+
+#aboutNav a {
+    color: #333333;
+    cursor: pointer;
+}
+
+.subteams p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subteams .hide {
+    display: none;
+}
+
+
+/*******************TEAM**********************/
+
+.teamLead {
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+#team {
+    background: #eee !important;
+    margin-top: -100px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #607D8B;
+    border-color: #607D8B;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #607D8B;
+    border-color: #607D8B;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #607D8B;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #607D8B !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #607D8B !important;
+}
+
+.frontside .card .card-body img {
+    width: 175px;
+    padding-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+#subteamNav {
+    margin-bottom: 40px;
+}
+
+#subteamNav .active {
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+#subteamNav .active a {
+    color: #607D8B;
+}
+
+#subteamNav a {
+    color: #333333;
+    cursor: pointer;
+}
+
+
+/** Alumni **/
+
+.alumnicard {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.alumnicard .card {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.alumnicard .card a {
+    font-size: 18px;
+    color: #607D8B !important;
+}
+
+.alumnicard .card .card-title {
+    color: #607D8B !important;
+}
+
+.alumnicard .card .card-body img {
+    width: 175px;
+}
+
+@media screen and (min-width: 768px) {
+    .alumni {
+        padding-bottom: 180px;
+    }
+
+    .alumni h1 {
+        padding-top: 50px;
+    }
+
+    .alumni p {
+        padding-top: 35px;
+    }
+
+    .firstAlumList {
+        display: inline-block;
+        float: left;
+        padding-left: 300px;
+        padding-top: 25px;
+    }
+
+    .firstAlumList li {
+        list-style: none;
+        padding-top: 3px;
+    }
+
+    .secondAlumList {
+        display: inline-block;
+        float: right;
+        padding-right: 150px;
+        padding-top: 25px;
+    }
+
+    .secondAlumList li {
+        list-style: none;
+        padding-top: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .alumni h1 {
+        padding-top: 50px;
+    }
+
+    .alumni p {
+        padding-top: 35px;
+    }
+
+    .firstAlumList li {
+        list-style: none;
+        padding-top: 3px;
+    }
+
+    .secondAlumList li {
+        list-style: none;
+        padding-top: 3px;
+    }
+}
+
+
+/*******************APPLY**********************/
+
+.applyHeader {
+    margin-top: 100px;
+}
+
+.schedule {
+    padding-left: 35px;
+}
+
+.currentRecruitment {
+    font-size: 20px;
+    padding-bottom: 50px;
+    padding-top: 12px;
+}
+
+#applyNav {
+    margin-bottom: 40px;
+}
+
+#applyNav .active {
+    border-radius: 25px;
+    background-color: #F5F5F5;
+}
+
+#applyNav .active a {
+    color: #607D8B;
+}
+
+#applyNav a {
+    color: #333333;
+    cursor: pointer;
+}
+
+.apply-button {
+    text-align: center;
+    margin: 0 100px;
+}
+
+#center-apply-btn {
+    margin-left: 0 !important;
+}
+
+.apply-now-btn {
+    text-align: center;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="images/logo/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/logo/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="images/logo/manifest.json">
+	<link rel="mask-icon" href="images/logo/safari-pinned-tab.svg" color="#607d8b">
+	<meta name="theme-color" content="#ffffff">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+    <!--For accordion styling-->
+	<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+
+	<title>Cornell iGEM</title>
+</head>
+<body>
+  <!--/************************* NAVIGATION BAR ************************************/ -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar fixed-top">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo"><img src="images/logo/logo.png" width="200" alt="logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="about.html" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="team.html" class="nav-links">Team</a>
+            </li>
+            <li>
+                <a href="apply.html" class="nav-links activenav">Apply</a>
+            </li>
+						<li>
+								<a href="https://securelb.imodules.com/s/1717/alumni/index.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=283&sort=1&bledit=24" class="nav-links" target="_blank">Donate</a>
+						</li>
+        </ul>
+    </nav>
+
+<!--Banner-->
+
+
+		<div class="home-banner-container">
+		  <div class="home-slides">
+		    <img src="images/banners/apply.jpg" style="width:100%" alt="apply">
+		  </div>
+		</div>
+		<br>
+
+		<!-- Apply Information -->
+
+		<div class="container applyHeader">
+			<h1> Come Join Us! </h1>
+			<br>
+
+<div class="currentRecruitment">
+	We are currently actively recruiting for the wiki subteam. Check out our application <a href="https://docs.google.com/forms/d/e/1FAIpQLSclYNiBCbbcRh9M4nu1A7osgxT5x04E6RnnB6zs6hgCrar9Hg/viewform">here</a>. Wiki applications will close on 9/24. General Fall 2020 recruitment will occur in early-mid October around Project Team Fest. If you are interested in getting updates on general recruitment, fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBTLhzKJtQ7aug9A8RJ-rlRB8GyK4jPP6tAYlz2nA2U9g2dQ/viewform">interest form</a> to receive more information.
+</div>
+		<div class="applyInfo">
+		    <p class="teamInfo">
+		    Our team is made from students from every year, every college, and every major. From gene-splicing in wet-lab to pursuing business endeavors
+		    to organizing outreach events, bright passionate students make this team thrive.
+				Below is the breakdown of what a year in on <b>Cornell IGEM</b> looks like:</p>
+		</div>
+
+		<div class="schedule">
+<ul>
+				<li>Spring: brainstorm next project and new member training (2 credits, 6-8 hrs/week)</li>
+		    <li>Summer: on-campus project work (20+ hrs/week), all new team members (except for business and wiki subteams) are expected to stay in Ithaca over the summer</li>
+		    <li>Fall:finish project and compete at iGEM jamborees (3-4 credits, 12-16 hrs/week)</li>
+</ul>
+		</div>
+
+		<div class="applyInfo">
+<p>If you have any questions, feel free to send them to <a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a>. Stay tuned for more updates on Fall 2020 recruitment!
+</p>	</div>
+
+		<!-- Meet the SubTeams -->
+		<div class="subteams">
+
+			<p>
+				Check out the section below for an example of what our application typically looks like.
+				Each tab contains the standard short answer prompts and requirements generally and for each subteam.
+				Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us!
+			</p>
+
+			<ul id="applyNav" class="nav">
+				<li onclick="selectSubteam('general', this)" class="nav-item active"><a class="nav-link">General</a></li>
+				<li onclick="selectSubteam('wetLabTeam', this)" class="nav-item"><a class="nav-link">Wet Lab</a></li>
+				<li onclick="selectSubteam('productTeam', this)" class="nav-item"><a class="nav-link">Product Development</a></li>
+				<li onclick="selectSubteam('policyTeam', this)" class="nav-item"><a class="nav-link">Policy and Practices</a></li>
+				<li onclick="selectSubteam('businessTeam', this)" class="nav-item"><a class="nav-link">Business</a></li>
+				<li onclick="selectSubteam('wikiTeam', this)" class="nav-item"><a class="nav-link">Wiki</a></li>
+			</ul>
+
+		    <div class="general">
+<p>
+		            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit] </p>
+		        <p>
+		            Tell us something cool about yourself.
+		        </p>
+						<p>
+							If there are any additional files you would like to attach, please show us here. Submit your resume and optional additional documents. Maximum file size is 10 MB Anything else you want to tell us? (optional)
+						</p>
+		    </div>
+
+		    <div class="wetLabTeam hide">
+					  <p>
+							BioBrick is a term coined by iGEM to describe a interchangeable DNA part. Go to http://parts.igem.org/Frequently_Used_Parts to get a better idea of what some common BioBricks are. In a one paragraph, pitch your idea for a novel BioBrick. [300 Word Limit]
+		        </p>
+		    </div>
+
+		    <div class="productTeam hide">
+		        <p>
+							The Product Development Subteam integrates biology into other engineering fields in order to develop innovative products. If your major isn't related to biology, what is something that excites you in your field of study? If it is, what is a technology or innovation outside of biology that excites you? How could synthetic biology be integrated into this? [300 Word Limit]
+		        </p>
+		        <p>
+							(Optional) Please briefly list any technical/software skills you possess [Ex. Fusion 360, SQL, Welding]:
+		        </p>
+		    </div>
+
+		    <div class="policyTeam hide">
+		        <p>
+							Consider the following scenario: This year's wet lab has produced bacteria that can harness photosynthetic processes to turn plant by-products into ethanol, and product development has devised a device to most efficiently utilize these bacteria. As part of the Policy & Practices team, who would you contact to help discover and analyze the impact of the project, relevant policies and regulations, related research, bioethics of the project, design considerations for the product, etc.? Please detail specific reasons for choosing each stakeholder. (300-500 words)
+		        </p>
+		        <p>
+							Please share your innovative ideas for one short-term outreach project and one long-term outreach initiative. What would you do and why would this type of outreach be meaningful?
+		        </p>
+		    </div>
+
+		    <div class="businessTeam hide">
+		        <p>
+							Consider this scenario: Wet Lab has created bacteria that can remove carbon dioxide from the air. Product Development has designed a system that applies this bacteria's function to the real world. How would you pitch the product to a potential sponsor and how would you raise enough funds to take the company forward? [300 Word Limit]
+		        </p>
+		    </div>
+
+		    <div class="wikiTeam hide">
+		        <p>
+							Please describe your experience with web development (e.g. HTML, CSS, JavaScript, GitHub, Bootstrap) or design softwares (e.g. Adobe Photoshop, Adobe Illustrator, Sketch). If no experience, please describe your interest (150 words max)
+		        </p>
+		        <p>
+							(Optional) If you have a portfolio, please include a shareable link to it
+		        </p>
+		    </div>
+
+		</div>
+	</div>
+		<script>
+		    function selectSubteam(teamName, element){
+		        document.getElementsByClassName("general")[0].classList.add("hide");
+		        document.getElementsByClassName("wetLabTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("productTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("policyTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("businessTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("wikiTeam")[0].classList.add("hide");
+		        document.getElementsByClassName(teamName)[0].classList.remove("hide");
+
+		        var navItems = document.getElementById("applyNav").getElementsByTagName("li");
+		        for (var i = 0; i<navItems.length; i++){
+		            navItems[i].classList.remove("active");
+		        }
+		        element.classList.add("active");
+		    }
+		</script>
+
+
+
+
+
+    <!--/************************* FOOTER ************************************/ -->
+
+    <footer class="footer-distributed">
+
+    			<div class="footer-left">
+              <img src="images/logo/logo.png" width="200" alt="logo">
+
+    				<p class="footer-links">
+    					<a href="index.html">Home</a>
+    					|
+    					<a href="about.html">About</a>
+    					|
+    					<a href="team.html">Team</a>
+    					|
+    					<a href="apply.html">Apply</a>
+    				</p>
+
+    				<p class="footer-company-name">© 2020 Cornell iGEM</p>
+    			</div>
+
+    			<div class="footer-center">
+    				<div>
+    					<i class="fa fa-map-marker"></i>
+    					  <p><span>Cornell University
+    						 </span>
+    						Ithaca, New York - 14853</p>
+    				</div>
+
+    				<div>
+    					<i class="fa fa-envelope"></i>
+    					<p><a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a></p>
+    				</div>
+    			</div>
+    			<div class="footer-right">
+    				<p class="footer-company-about">
+    					Designed and created by Karen Zhan and Anish Navada | Built upon the work of Tennyson Bardwell, Rishabh Singh, Amanda Ong</p>
+    				<div class="footer-icons">
+    					<a href="https://facebook.com/cornelligem"><i class="fa fa-facebook"></i></a>
+    					<a href="https://twitter.com/cugem"><i class="fa fa-twitter"></i></a>
+    					<a href="https://www.instagram.com/cugem/"><i class="fa fa-instagram"></i></a>
+    					<a href="https://www.linkedin.com/company/cornell-igem"><i class="fa fa-linkedin"></i></a>
+    					<a href="https://www.youtube.com/user/CornelliGEM/"><i class="fa fa-youtube"></i></a>
+    				</div>
+    			</div>
+    		</footer>
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="http://www.youtube.com/iframe_api"></script>
+</body>
+</html>

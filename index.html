@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/logo/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/logo/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/logo/manifest.json">
+    <link rel="mask-icon" href="images/logo/safari-pinned-tab.svg" color="#607d8b">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+    <!--For accordion styling-->
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+
+    <title>iGEM at Cornell | Home</title>
+</head>
+
+<body>
+
+    <!--/************************* NAVIGATION BAR ************************************/ -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <nav class="navbar fixed-top">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo"><img src="images/logo/logo_new.png" width="200" alt="logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="about.html" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="team.html" class="nav-links">Team</a>
+            </li>
+            <li>
+                <a href="apply.html" class="nav-links">Apply</a>
+            </li>
+            <li>
+                <a href="faq.html" class="nav-links">FAQ</a>
+            </li>
+            <li>
+                <a href="donate.html" class="nav-links">Donate</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--/************************* BANNER ************************************/ -->
+    <div class="home-banner-large-container">
+        <div class="home-banner-container">
+            <div class="home-slides">
+                <img src="images/banners/home1.jpg" style="width:100%">
+            </div>
+            <div class="home-slides">
+                <img src="images/banners/home2.jpg" style="width:100%">
+            </div>
+            <div class="home-slides">
+                <img src="images/banners/home3.jpg" style="width:100%">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!--/************************* TAG LINE ************************************/ -->
+
+    <div class="container homePageTag">
+        <p>
+            Welcome to Cornell's premier <u>synthetic biology</u> project team. </p>
+    </div>
+
+    <!--/************************* OUR CURRENT WORK ************************************/ -->
+
+
+    <div class="container-fluid currentWork">
+        <h1>
+            Our Current Work </h1>
+        <div class="currentWorkItems">
+            <div class="currentWorkImg">
+                <img src="images/content/Prosper logo.png" alt="Our Current Work" width="500">
+            </div>
+            <div class="currentWorkText">
+                <p>Currently, one of the largest barriers to Mars exploration is sustainability. Martian regolith (the equivalent of soil) 
+                    is very difficult to grow crops on due to its chemical composition. Perchlorate accounts for 0.4% to 0.6% of the regolith 
+                    and serves as a key barrier to plant growth. In addition, perchlorates at such concentrations is harmful to human health, 
+                    impacting thyroid function as seen in regions of Chile where perchlorate is abundant. This year's project focuses on developing 
+                    a microbial co-culture system for Martian regolith remediation, targeting the high perchlorate toxicity and salt concentration.</p>
+
+                <p>Our system consists of three primary stages:</p>
+                <p>(1) Engineering and characterization of E. coli to express key perchlorate reduction proteins in perchlorate reductase [pcr] and chlorite dismutase [cld] </p>
+                <p>(2) Cultivation and optimization of Synechococcus sp. PCC 7002, which naturally uptakes chloride byproducts from the perchlorate reduction process and recycles organic carbon through sucrose secretions</p>
+                <p>(3) Development of a two-stage fixed-bed biofilm bioreactor, incorporating easily replaceable biofilm carriers to support the growth of both organisms for the 1st stage, 
+                    and conduct perchlorate treatment and desalination under controlled conditions in the 2nd stage. The Wiki subteam will collaborate with the Product Development 
+                    subteam to program a user-friendly interface of the Arduino bioreactor connected to a cell phone.</p>
+                <p>On the social awareness side, the Policy and Practices subteam has been focusing on interviews with not only researchers but also experts in space policy and ethics. 
+                    The subteam has been focused on sharing the information learned from these interviews with the community through various educational opportunities. 
+                    In conjunction, the Business subteam has been focusing on developing a business plan to commercialize and scale up the project after the competition. 
+                    The subteam has also been working on finding partners and sponsors for our project.</p>
+            </div>
+            <!--<div class="season-goals">
+                <a class="trigger_popup_fricc">2020 Season Goals</a>.
+            </div>
+            <div class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                    <div class="popupCloseButton">&times;</div>
+                    <br><br>
+                    <p>Cornell iGEM's goals for the 2020 season have shifted rapidly as the global situation involving
+                        COVID-19 has continued developing. Our initial direction was to complete an iGEM project as we
+                        do normally, aiming for gold medal classification when we compete at the 2020 Giant Jamboree.
+                        However, due to the impact of COVID-19, we are largely unable to perform work in-person and
+                        accordingly we are most likely unable to create a physical product for the 2020 season. While
+                        this is unfortunate, the situation at hand has allowed for much personal growth amongst team
+                        members and leaders.
+                        <br> <br>Without lab work as a requirement for competition this year, teams are being judged
+                        largely on factors related to modeling, business plans, proof-of-concept, etc. Essentially, the
+                        hypotheticals and designs of the original product. Cornell iGEM members have acquired new
+                        skillsets as a result of this, being required to apply themselves outside of their comfort zone
+                        to learn about previously unfamiliar disciplines. Teaching iGEM students the skills necessary to
+                        assemble this new type of project is at the forefront of our team goals this year.
+                        <br> <br>Our goals for the 2020 season have shifted from an output and results-based approach to
+                        an approach centered around personal growth, flexibility, and accountability. Through conducting
+                        our meetings and operations virtually, each team member has improved their communication skills
+                        and developed a better sense of accountability, since there is less strict direction from the
+                        leads in a remote work environment. Though COVID-19 strongly impacted the workflow of our team,
+                        we are still working hard to ensure that every team member leaves having learned something
+                        valuable.
+                        <br> <br> - Lucas Evans, Team Lead
+
+                    </p>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+
+
+    <!--/************************* PAST PROJECTS AND ACHIEVEMENTS ************************************/ -->
+
+    <div class="pastProjects">
+        <h1>Past Projects and Achievements</h1>
+
+        <div id="projects-accordion" class="accordion">
+            <ul>
+                <li style='background-image: url("images/content/oncurex.png"); background-size: cover;'>
+                    <div>
+                        <a href="https://2024.igem.wiki/cornell/">
+                            <h6>Oncurex - 2024</h6>
+                            <p>Optimizing the biosynthesis and delivery of ursolic acid in yeast for oncology.</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification</li>
+                                <li>Nominated for Best Presentation</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/energem-ansys.png"); background-size: cover;'>
+                    <div>
+                        <a href="https://2023.igem.wiki/cornell/">
+                            <h6>ENERGEM - 2023</h6>
+                            <p><i>E. coli</i> engineered to produce enzymes to synthesize beneficial high-value 
+                                methylxanthines in a cell-free immobilized-enzyme reactor.</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/i-6874.jpg"); background-size: cover;'>
+                    <div>
+                        <a href="https://2022.igem.wiki/cornell/">
+                            <h6>MicroMurals - 2022</h6>
+                            <p>Handheld 3D bioprinter aimed at bridging the gap between the arts and STEM in early
+                                interdisciplinary education.</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/iGEM-5982.jpg"); background-size: cover;'>
+                    <div>
+                        <a href="http://2021.igem.org/Team:Cornell">
+                            <h6>Collatrix - 2021</h6>
+                            <p>Protein-based hydrogel scaffolds for wound healing research and applications and optimal
+                                tissue repair.</p>
+                            <b>Archievements</b>
+                            <ul>
+                                <li>Achieved silver medal classification</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/pretend lumicure.jpg"); background-size: cover;'>
+                    <div>
+                        <a href="http://2020.igem.org/Team:Cornell">
+                            <h6>Lumicure - 2020</h6>
+                            <p><i>E. coli</i> engineered to produce fluorescent reporter and a cancer therapeutic for
+                                metastatic breast cancer.</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/rehab.jpg"); background-size: cover;'>
+                    <div>
+                        <a href="http://2019.igem.org/Team:Cornell">
+                            <h6>Rehab - 2019</h6>
+                            <p>Developing a community-oriented Harmful Algal Bloom detection and remediation system.</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+                
+        <div id="projects-accordion" class="accordion">
+            <ul>
+                <li style='background-image: url("images/projects/DSC_0887.jpg"); background-size: cover;'>
+                    <div>
+                        <a href="http://2018.igem.org/Team:Cornell">
+                            <h6>Oscillate - 2018</h6>
+                            <p>A novel frequency-based biological band-pass filter</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved bronze medal classification</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li
+                    style='background-image: url("images/projects/greenhouse800x533.jpg"); background-position: center bottom;'>
+                    <div>
+                        <a href="http://2017.igem.org/Team:Cornell">
+                            <h6>OxyPonics - 2017</h6>
+                            <p>A biologically integrated hardware system that uses oxidative stress to boost hydroponic
+                                crop yields</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification</li>
+                                <li>Won Best Supporting Entrepreneurship at the 2017 iGEM Giant Jamboree</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/module800x533.jpg");'>
+                    <div>
+                        <a href="http://2016.igem.org/Team:Cornell_NY/defaulthome">
+                            <h6>Legendairy - 2016</h6>
+                            <p>A bacteriocin treatment and customizable preventative milking shell for bovine mastitis
+                            </p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved silver medal classification</li>
+                                <li>Nominated for Best Integrated Practices at the 2016 iGEM Giant Jamboree</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/teamphoto800x350.jpg");'>
+                    <div>
+                        <a href="http://2015.igem.org/Team:Cornell">
+                            <h6>fishPHARM - 2015</h6>
+                            <p>Novel drug delivery system and probiotic treatment for Bacterial Coldwater Disease and
+                                app for monitoring nutrient content in fish hatcheries</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification for fifth consecutive year</li>
+                                <li>Won Best Supporting Entrepreneurship, Best Environmental Project, and Best Applied
+                                    Design</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/grass800x350.jpg");'>
+                    <div>
+                        <a href="http://2014.igem.org/Team:Cornell">
+                            <h6>Lead it Go - 2014</h6>
+                            <p>Continuous water filtration system to sequester heavy metals</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification for fourth consecutive year</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/organofoam350x800.jpg");'>
+                    <div>
+                        <a href="http://2013.igem.org/Team:Cornell" )>
+                            <h6>Organofoam - 2013</h6>
+                            <p>Comprehensive genetic toolkit for fungal engineering</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Achieved gold medal classification for third consecutive year</li>
+                                <li>Won Best Human Practices Advance at North American iGEM competition</li>
+                                <li>Won Best Human Practices Advance at iGEM international competition</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+                <li style='background-image: url("images/projects/inriver350.jpg");'>
+                    <div>
+                        <a href="http://2012.igem.org/Team:Cornell" )>
+                            <h6>Safe Bet - 2012</h6>
+                            <p>Real-time arsenic biosensor</p>
+                            <b>Achievements</b>
+                            <ul>
+                                <li>Awarded top 4 finalist regionally, won Best Wiki and Best Human Practices Advance
+                                    awards</li>
+                                <li>Top 16 finalist worldwide, won 'Best Solution to an Oil Sands Problem' from the Oil
+                                    Sands Leadership Initiative</li>
+                            </ul>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--/************************* DONATE ************************************/ -->
+
+    <div class="container-fluid donate">
+
+        <h1 class="donateHeader">
+            Donate </h1>
+        <p class="donateText">
+            Help make our synbio ideas become reality! Any amount will go towards purchasing much-needed supplies for
+            our current project. Thanks to the generosity of our sponsors, the Cornell iGEM Project Team is able to make meaningful
+            advances and discoveries every year. </p>
+        <div class="buttonDiv">
+            <a class="btn btn-secondary btn-lg"
+                href="https://securelb.imodules.com/s/1717/alumni/index.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=283&sort=1&bledit=24"
+                role="button" target="_blank">Donate Now</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <!--/************************* SPONSORS ************************************/ -->
+
+
+    <div class="sponsors">
+        <h1>Sponsors</h1>
+
+        <!-- </div> -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="column">
+                    <img src="images/sponsors/Cornell_cornellcrest.png" alt="cornellcrest" width="250">
+                    <img src="images/sponsors/Cornell_biobasic.png" alt="biobasic">
+                </div>
+                <div class="column">
+                    <img src="images/sponsors/Cornell_corning.png" alt="corning" width="350">
+                    <img src="images/sponsors/cornellInstituteBiotechnology.png" alt="InstituteBiotechnology">
+                    <img class='img-responsive' src="images/sponsors/Cornell_genscript.png" alt="genscript">
+                    <img class='img-responsive' src="images/sponsors/Cornell_idt.png" alt="idt">
+                    <img class='img-responsive' src="images/sponsors/Cornell_mathworks.png" alt="mathworks">
+                    <img class='img-responsive' src="images/sponsors/Cornell_neb.PNG" alt="neb">
+                    <img class='img-responsive' src="images/sponsors/mendeley-logo-red.png" alt="mendeley-logo">
+                </div>
+                <div class='column'>
+                    <img class='img-responsive' src="images/sponsors/Cornell_snap_gene.png" alt="snapgene">
+                    <img class='img-responsive' src="images/sponsors/Cornell_thermofisher.png" alt="thermo fisher">
+                    <img class='img-responsive' src="images/sponsors/Cornell_vwr.png" alt="vwr">
+                    <img class='img-responsive' src="images/sponsors/DNA20-logo-for-iGEM.png" alt="DNA Atlas"
+                        width="350">
+                    <img class='img-responsive' src="images/sponsors/KS_Logo_Final.png" alt="KS" width="350">
+                </div>
+            </div>
+            <div class="container col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2"
+                style="margin-top: 30px; min-width: 300px;">
+                <a href="images/sponsors/2024 Sponsorship Packet.pdf">
+                    <img class="img-responsive" src="images/buttons/download_sp.png" style="
+                        max-width: 750px;
+                        width: 100%;
+                        margin: 0 auto;
+                        vertical-align: middle;
+                    " alt="download button">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--/************************* FOOTER ************************************/ -->
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img src="images/logo/logo_new.png" width="200" alt="logo">
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="about.html">About</a>
+                |
+                <a href="team.html">Team</a>
+                |
+                <a href="apply.html">Apply</a>
+                |
+                <a href="faq.html">FAQ</a>
+                |
+                <a href="donate.html">Donate</a>
+            </p>
+
+            <p class="footer-company-name">&copy; 2025 Cornell iGEM Project Team</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Cornell University
+                    </span>
+                    Ithaca, New York - 14853</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                Designed and created by current Wiki Subteam Leads | Built upon the work of past Wiki Leads | This organization is a registered student organization of Cornell University. | <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">Equal Education and Employment (EEEO) Statement</a>
+                <!--Designed by Karen Zhan and Anish Navada | Built upon the work of Tennyson Bardwell, Rishabh
+                Singh, Amanda Ong -->
+            </p>
+            <div class="footer-icons">
+                <a href="https://facebook.com/cornelligem"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/cugem"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/cugem/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/cornell-igem"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/user/CornelliGEM/"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="http://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
