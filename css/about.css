@@ -1,0 +1,170 @@
+body {
+    background-color: #313e77;
+}
+
+h1 {
+    font-family: "Lexend Exa", sans-serif;
+    font-weight: normal;
+    font-size: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Lexend Exa", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+p {
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.vertical{
+    writing-mode: tb-rl;
+    text-orientation: upright;
+}
+
+#main_container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;   
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 600px;
+    grid-area: 1 / 1; 
+}
+
+#top {
+    position: relative;
+    height: 600px;
+    grid-area: 1 / 1; 
+}
+
+#big {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+#little {
+    position: absolute; 
+    bottom: 0;
+    right: 100px;
+}
+
+#helix {
+    transform: rotate(-40deg);
+    width: auto;
+    height: 600px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#div1 {
+    display: flex;
+    justify-content: center;
+}
+
+#div2 {
+    display: flex;
+    text-align: center;
+}
+
+#container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#0c0f1c, #445497);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle2 {
+     width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#0c0f1c, #445497);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+.b1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #ffffff;
+    background-color: #ffffff1A;
+    width: 150px;
+    height: 75px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px, solid, #ffffff1A;
+}
+
+#container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#wl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subteam {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #ffffff;
+    background-color: #ffffff1A;
+    height: 400px;
+    width: 90%;
+    border-radius: 40px;
+    border: 2px, outset, #ffffff1A;
+    padding: 20px;
+}
+
+.st {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 20px;
+}
+
+.simg {
+    width: auto;
+    height: 300px;
+}
