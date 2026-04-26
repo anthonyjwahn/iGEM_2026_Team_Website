@@ -169,6 +169,270 @@ a {
     }
 }
 
+/* =========================================================
+   Homepage redesign (scoped to body.home only)
+   - Continuous background that spans multiple screens so
+     cropped parts "flow" into the next screen on scroll.
+   ========================================================= */
+
+body.home {
+    background: #2c3b7f;
+    color: #ffffff;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    /* HERO background tuning knobs (edit these to move/scale) */
+    --hero-dna-size: contain; /* prevents cropping */
+    --hero-dna-x: 50%;
+    --hero-dna-y: 0px;
+}
+
+body.home a {
+    color: #ffffff;
+}
+
+/* Home sections (use normal page scrolling) */
+body.home .home-scroll {
+    position: relative;
+    z-index: 1;
+}
+
+body.home .home-screen {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Background layer behind the first 4 screens */
+body.home .home-bg {
+    position: absolute;
+    inset: 0;
+    height: 200vh; /* span hero + next screen so it "flows" */
+    z-index: 0;
+    pointer-events: none;
+}
+
+body.home .home-bg--hero{
+    background-image:
+      url("../images/home_page/Ellipse_right.png"),
+      url("../images/home_page/Group 7.png");
+  
+    background-repeat: no-repeat, no-repeat;
+  
+    /* 1st = ellipse size, 2nd = main background size */
+    background-size: 10px auto, var(--hero-dna-size);
+  
+    /* 1st = ellipse position, 2nd = main background position */
+    background-position: right -30px 50%, var(--hero-dna-x) var(--hero-dna-y);
+  }
+
+/* Navbar on homepage: centered options, glass strip behind the options */
+body.home .navbar {
+    background: transparent;
+    box-shadow: none;
+    z-index: 3000;
+}
+
+body.home .navbar {
+    justify-content: center;
+}
+
+body.home .logo {
+    display: none;
+}
+
+body.home .navbar-toggle {
+    display: none;
+}
+
+body.home .main-nav {
+    display: flex;
+    border-top: none;
+    width: auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    margin-top: 0;
+}
+
+/* Prevent desktop nav rules from pulling items upward */
+body.home .main-nav li {
+    margin-top: 0;
+}
+
+/* Add a little top breathing room on large screens */
+@media screen and (min-width: 768px) {
+    body.home .navbar.fixed-top {
+        padding-top: 14px;
+    }
+}
+
+body.home .nav-links {
+    margin-left: 28px;
+    margin-right: 28px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.95;
+    color: #ffffff;
+}
+
+/* HERO (screen 1) */
+body.home .home-hero {
+    padding-top: 110px; /* space for nav */
+}
+
+body.home .home-hero-inner {
+    width: min(980px, 92vw);
+    margin: 0 auto;
+    padding: 64px 0 0;
+}
+
+body.home .home-hero-brand-top {
+    display: block;
+    letter-spacing: 0.12em;
+    font-size: 18px;
+    opacity: 0.95;
+    margin-bottom: 8px;
+}
+
+body.home .home-hero-brand-bottom {
+    display: block;
+    font-weight: 700;
+    font-size: clamp(64px, 7.8vw, 110px);
+    letter-spacing: 0.02em;
+    line-height: 1;
+}
+
+body.home .home-hero-underline {
+    display: block;
+    height: 3px;
+    width: min(420px, 80vw);
+    margin-top: 12px;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* TAGLINE (screen 2) */
+body.home .home-tagline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body.home .home-tagline-inner {
+    width: min(920px, 92vw);
+    margin: 0 auto;
+}
+
+body.home .home-tagline-text {
+    margin: 0 auto;
+    width: min(560px, 92vw);
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+body.home .home-tagline-dots {
+    margin-top: 18px;
+}
+
+body.home .dot {
+    cursor: default;
+    height: 6px;
+    width: 6px;
+    margin: 8px 6px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+body.home .dot.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 480px) {
+    body.home {
+        --hero-dna-x: 50%;
+        --hero-dna-y: 0px;
+    }
+
+    body.home .home-bg {
+        height: 200vh;
+    }
+
+    body.home .home-hero-inner {
+        padding-top: 44px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    body.home .home-tagline-text {
+        font-size: 22px;
+    }
+}
+
+/* Screen 3 / 4 layout (matches the mock typography) */
+body.home .home-screen-inner {
+    width: min(980px, 92vw);
+    margin: 0 auto;
+    padding: 130px 0 0;
+}
+
+body.home .home-current-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+body.home .home-big-title {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 0.95;
+}
+
+body.home .home-big-title span {
+    display: block;
+    font-size: clamp(44px, 10vw, 76px);
+}
+
+body.home .home-card {
+    max-width: 520px;
+    margin-left: auto;
+    text-align: left;
+}
+
+body.home .home-card-title {
+    margin: 0 0 10px;
+    font-size: clamp(22px, 4.6vw, 34px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+body.home .home-card-body {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.55;
+    opacity: 0.9;
+}
+
+@media screen and (min-width: 720px) {
+    body.home .home-current-inner {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 36px;
+        align-items: center;
+    }
+}
+
+
 
 /*** Banner Styling ***/
 

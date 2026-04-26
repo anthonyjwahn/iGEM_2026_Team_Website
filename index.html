@@ -34,7 +34,7 @@
     <title>iGEM at Cornell | Home</title>
 </head>
 
-<body>
+<body class="home">
 
     <!--/************************* NAVIGATION BAR ************************************/ -->
 
@@ -64,39 +64,66 @@
         </ul>
     </nav>
 
-    <!--/************************* BANNER ************************************/ -->
-    <div class="home-banner-large-container">
-        <div class="home-banner-container">
-            <div class="home-slides">
-                <img src="images/banners/home1.jpg" style="width:100%">
+    <!-- Homepage: continuous background spans multiple screens -->
+    <div class="home-bg home-bg--hero" aria-hidden="true"></div>
+
+    <main class="home-scroll">
+        <header class="home-screen home-hero" aria-label="Homepage hero">
+            <div class="home-hero-inner">
+                <div class="home-hero-brand">
+                    <span class="home-hero-brand-top">CORNELL</span>
+                    <span class="home-hero-brand-bottom">iGEM</span>
+                    <span class="home-hero-underline" aria-hidden="true"></span>
+                </div>
             </div>
-            <div class="home-slides">
-                <img src="images/banners/home2.jpg" style="width:100%">
+        </header>
+
+        <section class="home-screen home-tagline" aria-label="Homepage tagline">
+            <div class="home-tagline-inner">
+                <p class="home-tagline-text">
+                    Welcome to Cornell's
+                    <br>
+                    premier synthetic
+                    <br>
+                    biology project team.
+                </p>
+                <div class="home-tagline-dots" aria-label="Tagline indicators">
+                    <span class="dot active" aria-hidden="true"></span>
+                    <span class="dot" aria-hidden="true"></span>
+                    <span class="dot" aria-hidden="true"></span>
+                </div>
             </div>
-            <div class="home-slides">
-                <img src="images/banners/home3.jpg" style="width:100%">
+        </section>
+
+        <section class="home-screen home-current" aria-label="Current work">
+            <div class="home-screen-inner home-current-inner">
+                <h2 class="home-big-title">
+                    <span>CURR</span>
+                    <span>ENT</span>
+                    <span>WORK</span>
+                </h2>
+
+                <div class="home-card">
+                    <h3 class="home-card-title">PROsPER</h3>
+                    <p class="home-card-body">
+                        Currently, one of the largest barriers to Mars exploration is sustainability. Martian regolith (the equivalent of soil)
+                        is very difficult to grow crops on due to its chemical composition. Perchlorate accounts for 0.4% to 0.6% of the regolith
+                        and serves as a key barrier to plant growth. In addition, perchlorates at such concentrations is harmful to human health.
+                        This year's project focuses on developing a microbial co-culture system for Martian regolith remediation.
+                    </p>
+                </div>
             </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+        </section>
 
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </div>
-
-    <!--/************************* TAG LINE ************************************/ -->
-
-    <div class="container homePageTag">
-        <p>
-            Welcome to Cornell's premier <u>synthetic biology</u> project team. </p>
-    </div>
+        <section class="home-screen home-more" aria-label="More works">
+            <div class="home-screen-inner">
+                <h2 class="home-big-title home-big-title--more">
+                    <span>MORE</span>
+                    <span>WORKS</span>
+                </h2>
+            </div>
+        </section>
+    </main>
 
     <!--/************************* OUR CURRENT WORK ************************************/ -->
 

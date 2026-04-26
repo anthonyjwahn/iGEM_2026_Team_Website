@@ -1,14 +1,17 @@
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
-navBarToggle.addEventListener('click', function () {
-  mainNav.classList.toggle('activenav');
-});
+if (navBarToggle && mainNav) {
+  navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('activenav');
+  });
+}
 
 
 
 
 var slideIndex = 1;
+// Homepage redesign may not include slideshow markup; guard for missing elements.
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -25,6 +28,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("home-slides");
   var dots = document.getElementsByClassName("dot");
+  if (!slides || slides.length === 0) return;
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
