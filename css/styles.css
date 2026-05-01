@@ -184,6 +184,37 @@ body.home {
     --hero-dna-size: contain; /* prevents cropping */
     --hero-dna-x: 50%;
     --hero-dna-y: 0px;
+
+    /* =====================================================
+       Position knobs (desktop + minimized stay consistent)
+       - Use px so it behaves predictably across screen sizes.
+       ===================================================== */
+    /* HERO words ("CORNELL iGEM") */
+    --hero-brand-shift-x: 0px;
+    --hero-brand-shift-y: 0px;
+
+    /* TAGLINE words ("Welcome to Cornell's...") */
+    --tagline-shift-x: 0px;
+    --tagline-shift-y: 350px;
+
+    /* HERO ellipse (Ellipse_right.png) */
+    --hero-ellipse-right-size: clamp(40px, 10vw, 140px);
+    --hero-ellipse-right-x: -20px; /* distance from right edge */
+    --hero-ellipse-right-y: 800px;   /* downward from top */
+
+    /* TAGLINE circle (circle.png) */
+    --tagline-circle-size: 220px;
+    --tagline-circle-x: -30px; /* distance from right edge */
+    --tagline-circle-y: 0px;   /* downward from top */
+
+    /* curve_structure.png (continuous background) */
+    --curve-bg-x: 50%;
+    --curve-bg-y: 300px;
+
+    /* Screen 2: top gap before curve shows */
+    --screen2-curve-gap: 80px;
+    /* Screen 2: curve_structure sizing (no stretch). Increase % to make it taller. */
+    --screen2-curve-size: 140% auto;
 }
 
 body.home a {
@@ -200,15 +231,30 @@ body.home .home-screen {
     scroll-snap-align: start;
     min-height: 100vh;
     position: relative;
+    overflow: hidden; /* prevents visible seams while scrolling */
 }
 
-/* Background layer behind the first 4 screens */
+/* Ensure section content is above per-screen backgrounds */
+body.home .home-hero-inner,
+body.home .home-tagline-inner,
+body.home .home-screen-inner {
+    position: relative;
+    z-index: 1;
+}
+
+/* Background layers for homepage screens */
 body.home .home-bg {
     position: absolute;
-    inset: 0;
-    height: 200vh; /* span hero + next screen so it "flows" */
+    left: 0;
+    right: 0;
     z-index: 0;
     pointer-events: none;
+}
+
+/* Hero background spans hero + screen 2 (keep Group 7 behavior) */
+body.home .home-bg--hero {
+    top: 0;
+    height: 200vh; /* span hero + next screen so it "flows" */
 }
 
 body.home .home-bg--hero{
@@ -219,11 +265,52 @@ body.home .home-bg--hero{
     background-repeat: no-repeat, no-repeat;
   
     /* 1st = ellipse size, 2nd = main background size */
-    background-size: 10px auto, var(--hero-dna-size);
+    background-size: var(--hero-ellipse-right-size) auto, var(--hero-dna-size);
   
     /* 1st = ellipse position, 2nd = main background position */
-    background-position: right -30px 50%, var(--hero-dna-x) var(--hero-dna-y);
+    background-position:
+      right var(--hero-ellipse-right-x) top var(--hero-ellipse-right-y),
+      var(--hero-dna-x) var(--hero-dna-y);
   }
+
+/* Curves as tall background layers (no repeat, no stretch) */
+body.home .home-bg--curve-2,
+body.home .home-bg--curve-4,
+body.home .home-bg--curve-56 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: auto; /* prevent inheriting any bottom constraints */
+    z-index: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: cover;       /* preserves aspect ratio (no stretch) */
+    background-position: center;  /* adjust if needed */
+}
+
+/* Screen 2 curve: curve_structure.png */
+body.home .home-bg--curve-2 {
+    top: 100vh;
+    height: 200vh; /* gives image room to not get clipped */
+    background-image: url("../images/home_page/curve_structure.png");
+    /* Do not crop curve_structure: fit to width without cutting off */
+    background-size: 100% auto;
+    background-position: var(--curve-bg-x) calc(var(--curve-bg-y) + var(--screen2-curve-gap));
+}
+
+/* Screen 4 curve: current_work curve.png */
+body.home .home-bg--curve-4 {
+    top: 250vh;   /* screen 4 */
+    height: 200vh;
+    background-image: url("../images/home_page/current_work curve.png");
+}
+
+/* Screens 5-6 curve: more_work_curve.png (single image over 200vh) */
+body.home .home-bg--curve-56 {
+    top: 400vh;   /* screen 5 */
+    height: 200vh; /* screen 5 + screen 6 */
+    background-image: url("../images/home_page/more_work_curve.png");
+}
 
 /* Navbar on homepage: centered options, glass strip behind the options */
 body.home .navbar {
@@ -291,6 +378,11 @@ body.home .home-hero-inner {
     padding: 64px 0 0;
 }
 
+body.home .home-hero-brand {
+    transform: translate(var(--hero-brand-shift-x), var(--hero-brand-shift-y));
+    will-change: transform;
+}
+
 body.home .home-hero-brand-top {
     display: block;
     letter-spacing: 0.12em;
@@ -318,14 +410,22 @@ body.home .home-hero-underline {
 /* TAGLINE (screen 2) */
 body.home .home-tagline {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     text-align: center;
+    padding-bottom: clamp(72px, 14vh, 160px);
+    /* curve_structure is now continuous via .home-bg--curve */
+    background-image: url("../images/home_page/circle.png");
+    background-repeat: no-repeat;
+    background-size: var(--tagline-circle-size) var(--tagline-circle-size);
+    background-position: right var(--tagline-circle-x) top var(--tagline-circle-y);
 }
 
 body.home .home-tagline-inner {
     width: min(920px, 92vw);
     margin: 0 auto;
+    transform: translate(var(--tagline-shift-x), var(--tagline-shift-y));
+    will-change: transform;
 }
 
 body.home .home-tagline-text {
@@ -359,6 +459,15 @@ body.home .dot.active {
     body.home {
         --hero-dna-x: 50%;
         --hero-dna-y: 0px;
+
+        /* Optional mobile-specific tuning (still uses same knobs) */
+        --hero-ellipse-right-size: clamp(28px, 14vw, 90px);
+        --hero-ellipse-right-x: -24px;
+        --hero-ellipse-right-y: 0px;
+
+        --tagline-circle-size: 160px;
+        --tagline-circle-x: -22px;
+        --tagline-circle-y: 0px;
     }
 
     body.home .home-bg {
@@ -366,13 +475,18 @@ body.home .dot.active {
     }
 
     body.home .home-hero-inner {
-        padding-top: 44px;
+        padding-top: 205px;
         padding-left: 10px;
         padding-right: 10px;
     }
 
     body.home .home-tagline-text {
         font-size: 22px;
+    }
+
+    body.home .home-tagline {
+        padding-bottom: 92px;
+        /* circle size/position is controlled by variables above */
     }
 }
 
