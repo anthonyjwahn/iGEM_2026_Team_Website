@@ -195,26 +195,9 @@ body.home {
 
     /* TAGLINE words ("Welcome to Cornell's...") */
     --tagline-shift-x: 0px;
-    --tagline-shift-y: 350px;
+    --tagline-shift-y: -250px; /* reset, handled by padding below */
 
-    /* HERO ellipse (Ellipse_right.png) */
-    --hero-ellipse-right-size: clamp(40px, 10vw, 140px);
-    --hero-ellipse-right-x: -20px; /* distance from right edge */
-    --hero-ellipse-right-y: 800px;   /* downward from top */
-
-    /* TAGLINE circle (circle.png) */
-    --tagline-circle-size: 220px;
-    --tagline-circle-x: -30px; /* distance from right edge */
-    --tagline-circle-y: 0px;   /* downward from top */
-
-    /* curve_structure.png (continuous background) */
-    --curve-bg-x: 50%;
-    --curve-bg-y: 300px;
-
-    /* Screen 2: top gap before curve shows */
-    --screen2-curve-gap: 80px;
-    /* Screen 2: curve_structure sizing (no stretch). Increase % to make it taller. */
-    --screen2-curve-size: 140% auto;
+    /* (removed) ellipse / circle / curve knobs */
 }
 
 body.home a {
@@ -259,18 +242,16 @@ body.home .home-bg--hero {
 
 body.home .home-bg--hero{
     background-image:
-      url("../images/home_page/Ellipse_right.png"),
-      url("../images/home_page/Group 7.png");
+      url("../images/home_page/cornell_igem.png"),
+      url("../images/home_page/Group 14.png");
   
     background-repeat: no-repeat, no-repeat;
   
-    /* 1st = ellipse size, 2nd = main background size */
-    background-size: var(--hero-ellipse-right-size) auto, var(--hero-dna-size);
+    /* 1st = cornell_igem logo sizing, 2nd = main background sizing */
+    background-size: clamp(260px, 36vw, 560px) auto, var(--hero-dna-size);
   
-    /* 1st = ellipse position, 2nd = main background position */
-    background-position:
-      right var(--hero-ellipse-right-x) top var(--hero-ellipse-right-y),
-      var(--hero-dna-x) var(--hero-dna-y);
+    /* 1st = cornell_igem logo position, 2nd = main background position */
+    background-position: left clamp(18px, 6vw, 70px) top clamp(80px, 14vh, 160px), var(--hero-dna-x) var(--hero-dna-y);
   }
 
 /* Curves as tall background layers (no repeat, no stretch) */
@@ -288,21 +269,28 @@ body.home .home-bg--curve-56 {
     background-position: center;  /* adjust if needed */
 }
 
-/* Screen 2 curve: curve_structure.png */
+/* Screen 2 curve: 2.png + welcome text overlay */
 body.home .home-bg--curve-2 {
-    top: 100vh;
-    height: 200vh; /* gives image room to not get clipped */
-    background-image: url("../images/home_page/curve_structure.png");
-    /* Do not crop curve_structure: fit to width without cutting off */
-    background-size: 100% auto;
-    background-position: var(--curve-bg-x) calc(var(--curve-bg-y) + var(--screen2-curve-gap));
+    top: 150vh;
+    height: 150vh; /* gives image room to not get clipped */
+    background-image:
+        url("../images/home_page/_ Welcome to Cornell's premier synthetic biology project team..png"),
+        url("../images/home_page/2.png");
+    background-repeat: no-repeat, no-repeat;
+    /* 1st = welcome text image, 2nd = curve image */
+    background-size: clamp(220px, 70vw, 680px) auto, 100% auto;
+    /* Move overlay upward toward the bowl center */
+    background-position: center clamp(40%, 50%, 60%), center top;
 }
 
-/* Screen 4 curve: current_work curve.png */
+/* Screen 4 curve: third.png */
 body.home .home-bg--curve-4 {
-    top: 250vh;   /* screen 4 */
+    top: 300vh;   /* screen 4 */
     height: 200vh;
-    background-image: url("../images/home_page/current_work curve.png");
+    background-image: url("../images/home_page/third.png");
+    /* Match other screens: fit width, avoid cropping/off-screen */
+    background-size: 100% auto;
+    background-position: center top;
 }
 
 /* Screens 5-6 curve: more_work_curve.png (single image over 200vh) */
@@ -413,25 +401,21 @@ body.home .home-tagline {
     align-items: flex-end;
     justify-content: center;
     text-align: center;
-    padding-bottom: clamp(72px, 14vh, 160px);
-    /* curve_structure is now continuous via .home-bg--curve */
-    background-image: url("../images/home_page/circle.png");
-    background-repeat: no-repeat;
-    background-size: var(--tagline-circle-size) var(--tagline-circle-size);
-    background-position: right var(--tagline-circle-x) top var(--tagline-circle-y);
+    padding-bottom: clamp(48px, 12vh, 140px);
 }
 
 body.home .home-tagline-inner {
     width: min(920px, 92vw);
     margin: 0 auto;
-    transform: translate(var(--tagline-shift-x), var(--tagline-shift-y));
-    will-change: transform;
+    transform: none;
+    will-change: auto;
+    z-index: 5; /* keep text above all background layers */
 }
 
 body.home .home-tagline-text {
     margin: 0 auto;
     width: min(560px, 92vw);
-    font-size: 28px;
+    font-size: clamp(18px, 3.5vw, 28px);
     line-height: 1.25;
     letter-spacing: 0.06em;
     color: rgba(255, 255, 255, 0.95);
@@ -480,13 +464,12 @@ body.home .dot.active {
         padding-right: 10px;
     }
 
-    body.home .home-tagline-text {
-        font-size: 22px;
+    body.home .home-tagline {
+        padding-bottom: clamp(32px, 8vh, 80px);
     }
 
-    body.home .home-tagline {
-        padding-bottom: 92px;
-        /* circle size/position is controlled by variables above */
+    body.home .home-tagline-text {
+        font-size: clamp(16px, 5.5vw, 22px);
     }
 }
 
@@ -671,13 +654,12 @@ body.home .home-card-body {
 /************************* OUR CURRENT WORK ************************************/
 
 .currentWork {
-    background-color: #F5F5F5;
+    /* Match homepage blue background */
+    background-color: #2c3b7f;
 }
 
 .currentWork h1 {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 50px;
+    display: none; /* remove "Our Current Work" words */
 }
 
 .currentWorkItems {
@@ -700,12 +682,7 @@ body.home .home-card-body {
     }
 
     .currentWorkText {
-        float: left;
-        width: 63%;
-        padding-right: 10%;
-        padding-left: 2.5%;
-        padding-top: 30px;
-        padding-bottom: 50px;
+        display: none; /* remove paragraph words on desktop */
     }
 }
 
@@ -725,16 +702,10 @@ body.home .home-card-body {
     }
 
     .currentWorkText {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-top: 20px;
-        padding-bottom: 50px;
+        display: none; /* remove paragraph words on mobile */
     }
 
-    .currentWork h1 {
-        padding-left: 5%;
-    }
+    .currentWork h1 { display: none; }
 }
 
 
