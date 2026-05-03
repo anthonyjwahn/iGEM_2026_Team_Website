@@ -104,3 +104,41 @@ $(window).load(function () {
         $('.hover_bkgr_fricc').hide();
     });
 });
+
+// Homepage projects carousel
+(function () {
+  const root = document.querySelector('[data-projects-carousel]');
+  if (!root) return;
+
+  const track = root.querySelector('[data-projects-track]');
+  const slides = Array.from(root.querySelectorAll('[data-project-slide]'));
+  const dots = Array.from(root.querySelectorAll('[data-projects-dot]'));
+  const prevBtn = root.querySelector('[data-projects-prev]');
+  const nextBtn = root.querySelector('[data-projects-next]');
+
+  if (!track || slides.length === 0) return;
+
+  let idx = 0;
+
+  function render() {
+    track.style.transform = `translateX(${-idx * 100}%)`;
+    slides.forEach((s, i) => s.classList.toggle('is-active', i === idx));
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === idx));
+  }
+
+  function go(n) {
+    idx = (n + slides.length) % slides.length;
+    render();
+  }
+
+  prevBtn && prevBtn.addEventListener('click', () => go(idx - 1));
+  nextBtn && nextBtn.addEventListener('click', () => go(idx + 1));
+  dots.forEach((d) => {
+    d.addEventListener('click', () => {
+      const n = Number(d.getAttribute('data-index'));
+      if (!Number.isNaN(n)) go(n);
+    });
+  });
+
+  render();
+})();

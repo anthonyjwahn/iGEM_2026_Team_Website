@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="images/logo/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="images/logo/manifest.json">
     <link rel="mask-icon" href="images/logo/safari-pinned-tab.svg" color="#607d8b">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#2c3b7f">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
@@ -36,7 +36,7 @@
     <title>iGEM at Cornell | Donate</title>
 </head>
 
-<body>
+<body class="donate-theme">
     <!--/************************* NAVIGATION BAR ************************************/ -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,63 +65,68 @@
         </ul>
     </nav>
 
-    <!--Banner-->
-
-
-    <div class="home-banner-container">
-        <div class="home-slides">
-            <img src="images/banners/donate.jpg" style="width:100%" alt="donate">
-        </div>
-    </div>
-    <br>
-
-    <!-- Sponsorship -->
+    <!-- Sponsorship / donate (themed to match homepage) -->
 
     <div class="container applyHeader">
-        <h1 style="text-align: center;">Thank you for your interest in supporting the Cornell iGEM Project Team!</h1>
-        <br>
-        <div class="buttonDiv" style="margin: auto; padding-left: 40%">
+        <h1 class="donate-page-title">Thank you for your interest in supporting the Cornell iGEM Project Team!</h1>
+
+        <div class="buttonDiv donate-page-cta">
             <a class="btn btn-primary btn-lg"
                 href="https://securelb.imodules.com/s/1717/alumni/index.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=283&sort=1&bledit=24"
-                role="button" target="_blank">Make a Donation</a>
+                role="button" target="_blank" rel="noreferrer">Make a Donation</a>
         </div>
-        <br>
-        <!---
+
         <div class="sponsors">
             <h1>Sponsors</h1>
+
             <div class="panel-body">
                 <div class="row">
                     <div class="column">
-                        <img src="images/sponsors/Cornell_cornellcrest.png" alt="cornellcrest" width="250">
-                        <img src="images/sponsors/Cornell_biobasic.png" alt="biobasic">
+                        <img src="images/sponsors/Cornell_cornellcrest.png" alt="Cornell crest" width="250">
+                        <img src="images/sponsors/Cornell_biobasic.png" alt="Cornell Biolab Basics">
                     </div>
                     <div class="column">
-                        <img src="images/sponsors/Cornell_corning.png" alt="corning" width="350">
-                        <img src="images/sponsors/cornellInstituteBiotechnology.png" alt="InstituteBiotechnology">
-                        <img class='img-responsive' src="images/sponsors/Cornell_genscript.png" alt="genscript">
-                        <img class='img-responsive' src="images/sponsors/Cornell_idt.png" alt="idt">
-                        <img class='img-responsive' src="images/sponsors/Cornell_mathworks.png" alt="mathworks">
-                        <img class='img-responsive' src="images/sponsors/Cornell_neb.PNG" alt="neb">
-                        <img class='img-responsive' src="images/sponsors/mendeley-logo-red.png" alt="mendeley-logo">
+                        <img src="images/sponsors/Cornell_corning.png" alt="Corning" width="350">
+                        <img src="images/sponsors/cornellInstituteBiotechnology.png" alt="Cornell Institute of Biotechnology">
+                        <img class="img-responsive" src="images/sponsors/Cornell_genscript.png" alt="GenScript">
+                        <img class="img-responsive" src="images/sponsors/Cornell_idt.png" alt="Integrated DNA Technologies">
+                        <img class="img-responsive" src="images/sponsors/Cornell_mathworks.png" alt="MathWorks">
+                        <img class="img-responsive" src="images/sponsors/Cornell_neb.PNG" alt="New England Biolabs">
+                        <img class="img-responsive" src="images/sponsors/mendeley-logo-red.png" alt="Mendeley">
                     </div>
-                    <div class='column'>
-                        <img class='img-responsive' src="images/sponsors/Cornell_snap_gene.png" alt="snapgene">
-                        <img class='img-responsive' src="images/sponsors/Cornell_thermofisher.png" alt="thermo fisher">
-                        <img class='img-responsive' src="images/sponsors/Cornell_vwr.png" alt="vwr">
-                        <img class='img-responsive' src="images/sponsors/DNA20-logo-for-iGEM.png" alt="DNA Atlas"
+                    <div class="column">
+                        <img class="img-responsive" src="images/sponsors/Cornell_snap_gene.png" alt="SnapGene">
+                        <img class="img-responsive" src="images/sponsors/Cornell_thermofisher.png" alt="Thermo Fisher Scientific">
+                        <img class="img-responsive" src="images/sponsors/Cornell_vwr.png" alt="VWR">
+                        <img class="img-responsive" src="images/sponsors/DNA20-logo-for-iGEM.png" alt="DNA Atlas"
                             width="350">
-                        <img class='img-responsive' src="images/sponsors/KS_Logo_Final.png" alt="KS" width="350">
+                        <img class="img-responsive" src="images/sponsors/KS_Logo_Final.png" alt="Knightscope" width="350">
                     </div>
+                </div>
+                <div class="container col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 sponsor-download-row"
+                    style="margin-top: 30px; min-width: 300px;">
+                    <a href="images/sponsors/2024 Sponsorship Packet.pdf">
+                        <img class="img-responsive" src="images/buttons/download_sp.png" style="
+                            max-width: 750px;
+                            width: 100%;
+                            margin: 0 auto;
+                            vertical-align: middle;
+                        " alt="Download sponsorship packet">
+                    </a>
                 </div>
             </div>
         </div>
-    -->
-        <div>
-            <h2 style="text-align: center;">If you are interested in becoming a sponsor, check out our sponsorship packet below for more information!</h2>
-            <br>    
-            <embed src="images/sponsors/2024 Sponsorship Packet.pdf" type="application/pdf" style="width: 70rem; height: 50rem;">
+
+        <section class="sponsor-packet" aria-label="Sponsorship packet">
+            <h2 class="sponsor-packet-lead">If you are interested in becoming a sponsor, check out our sponsorship
+                packet below for more information!</h2>
+            <div class="sponsor-packet-frame">
+                <embed class="sponsor-packet-embed"
+                    src="images/sponsors/2024 Sponsorship Packet.pdf"
+                    type="application/pdf"
+                    title="2024 Cornell iGEM Sponsorship Packet">
             </div>
-        </div>
+        </section>
     </div>
 
 

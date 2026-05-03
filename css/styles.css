@@ -217,6 +217,486 @@ body.home .home-screen {
     overflow: hidden; /* prevents visible seams while scrolling */
 }
 
+/* Hide old accordion section on homepage (new carousel replaces it) */
+body.home .pastProjects {
+    display: none;
+}
+
+/* Projects carousel (homepage) */
+body.home .home-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(70px, 10vh, 120px) 0;
+}
+
+body.home .projects-carousel {
+    width: min(1100px, 94vw);
+    position: relative;
+    z-index: 1;
+}
+
+body.home .projects-track {
+    display: flex;
+    transition: transform 380ms ease;
+    will-change: transform;
+}
+
+body.home .project-slide {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(18px, 4vw, 44px);
+    align-items: center;
+    padding: clamp(20px, 3.6vw, 46px);
+    border-radius: 26px;
+    background: #0f1020; /* non-transparent base */
+    border: none;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+}
+
+/* Per-project card colors (non-transparent, matches mock screens) */
+body.home .project-slide--prosper {
+    background: linear-gradient(135deg, #200814 0%, #5a1230 55%, #7c1a3c 100%);
+}
+
+body.home .project-slide--oncurex {
+    background: linear-gradient(180deg, #0bb8d0 0%, #2e71a7 55%, #4f5f86 100%);
+}
+
+body.home .project-slide--energem {
+    background: linear-gradient(180deg, #2f3561 0%, #1b1f3d 55%, #101225 100%);
+}
+
+body.home .project-slide--micromurals {
+    background: linear-gradient(180deg, #c9b487 0%, #8d826c 55%, #5c5750 100%);
+}
+
+body.home .project-slide--collatrix {
+    background: linear-gradient(180deg, #1a3f7a 0%, #2b4a74 55%, #4b5669 100%);
+}
+
+body.home .project-logo {
+    display: block;
+    max-width: min(520px, 80vw);
+    height: auto;
+}
+
+body.home .project-desc-img {
+    display: block;
+    max-width: min(520px, 86vw);
+    height: auto;
+    margin-top: 14px;
+    opacity: 0.95;
+}
+
+body.home .project-desc {
+    margin: 14px 0 0;
+    max-width: 52ch;
+    font-size: clamp(14px, 1.8vw, 18px);
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+body.home .project-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+}
+
+body.home .project-cta:hover {
+    background: rgba(255,255,255,0.18);
+    text-decoration: none;
+    color: #fff;
+}
+
+body.home .project-frame {
+    width: min(360px, 70vw);
+    aspect-ratio: 3 / 4;
+    border-radius: 28px;
+    border: 4px solid rgba(255,255,255,0.95);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    margin-left: auto;
+}
+
+body.home .project-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    filter: saturate(1.05) contrast(1.02);
+}
+
+body.home .projects-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.25);
+    color: #fff;
+    font-size: 26px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+}
+
+body.home .projects-nav--prev { left: 10px; }
+body.home .projects-nav--next { right: 10px; }
+
+body.home .projects-dots {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+body.home .projects-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(255,255,255,0.28);
+}
+
+body.home .projects-dot.is-active {
+    background: rgba(255,255,255,0.92);
+}
+
+@media screen and (max-width: 860px) {
+    body.home .project-slide {
+        grid-template-columns: 1fr;
+    }
+
+    body.home .project-frame {
+        margin-left: 0;
+    }
+}
+
+/* Donate (homepage): sits after carousel + sponsors, matches navy background */
+body.home .home-donate.home-screen {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(56px, 9vh, 110px) 0 clamp(44px, 7vh, 90px);
+    scroll-snap-align: start;
+}
+
+body.home .home-donate .donate {
+    width: min(1040px, 94vw);
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 0;
+}
+
+body.home .home-donate .donate-inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(22px, 5vw, 56px);
+    align-items: center;
+    padding: clamp(26px, 4vw, 44px);
+    border-radius: 26px;
+    background: rgba(12, 16, 40, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.35);
+}
+
+body.home .home-donate .donate-brand {
+    display: grid;
+    place-items: center;
+}
+
+body.home .home-donate .donate-crest {
+    width: clamp(132px, 18vw, 180px);
+    height: auto;
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(93%)
+        sepia(13%)
+        saturate(746%)
+        hue-rotate(190deg)
+        brightness(109%)
+        contrast(107%);
+}
+
+body.home .home-donate .donate-copy {
+    min-width: 0;
+}
+
+body.home .home-donate .donateHeader {
+    padding: 0 0 8px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+body.home .home-donate .donateText {
+    padding: 0 0 18px;
+    margin: 0;
+    max-width: 62ch;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+body.home .home-donate .buttonDiv {
+    display: flex;
+    justify-content: flex-start;
+}
+
+body.home .home-donate .btn-secondary.btn-lg {
+    margin-left: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.98);
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.25);
+}
+
+body.home .home-donate .btn-secondary.btn-lg:hover,
+body.home .home-donate .btn-secondary.btn-lg:focus {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.85);
+}
+
+@media screen and (max-width: 720px) {
+    body.home .home-donate .donate-inner {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    body.home .home-donate .buttonDiv {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Sponsors (homepage + donate/sponsors page): match navy theme */
+:is(body.home, body.donate-theme) .sponsors {
+    padding-top: clamp(40px, 7vh, 80px);
+    padding-bottom: clamp(24px, 5vh, 60px);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+:is(body.home, body.donate-theme) .sponsors h1 {
+    color: rgba(255, 255, 255, 0.96);
+}
+
+:is(body.home, body.donate-theme) .sponsors img {
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+}
+
+/* Footer (homepage + donate/sponsors page): navy background + light text/icons */
+:is(body.home, body.donate-theme) footer.footer-distributed {
+    margin-top: 0;
+    padding-top: clamp(52px, 8vh, 86px);
+    padding-bottom: clamp(46px, 7vh, 72px);
+    background: transparent;
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-left img {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(93%)
+        sepia(13%)
+        saturate(746%)
+        hue-rotate(190deg)
+        brightness(109%)
+        contrast(107%);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-links {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-links a {
+    color: inherit;
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-company-name {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-center p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-center p span {
+    color: rgba(255, 255, 255, 0.94);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-center p a {
+    color: rgba(255, 255, 255, 0.96);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-center i {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-company-about {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-company-about a {
+    color: rgba(255, 255, 255, 0.92);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+:is(body.home, body.donate-theme) .footer-distributed .footer-icons a {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Donate / sponsors standalone page — same navy system as homepage (no layered hero BG) */
+body.donate-theme {
+    background: #2c3b7f;
+    color: rgba(255, 255, 255, 0.95);
+    min-height: 100vh;
+}
+
+body.donate-theme .home-banner-container {
+    display: none;
+}
+
+body.donate-theme .applyHeader {
+    margin-top: clamp(96px, 14vh, 130px);
+    padding-bottom: clamp(40px, 6vh, 72px);
+    max-width: min(1140px, 94vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.donate-theme .donate-page-title {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.97);
+}
+
+body.donate-theme .donate-page-cta {
+    display: flex;
+    justify-content: center;
+    margin: clamp(20px, 3vh, 32px) 0 clamp(36px, 5vh, 52px);
+    padding-left: 0;
+}
+
+body.donate-theme .donate-page-cta .btn-primary.btn-lg {
+    margin-left: 0 !important;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+body.donate-theme .donate-page-cta .btn-primary.btn-lg:hover,
+body.donate-theme .donate-page-cta .btn-primary.btn-lg:focus {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.85);
+    color: #ffffff;
+}
+
+body.donate-theme .sponsor-packet-lead {
+    text-align: center;
+    margin: clamp(48px, 7vh, 72px) auto clamp(20px, 3vh, 28px);
+    max-width: 52ch;
+    font-size: clamp(17px, 2.6vw, 22px);
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+body.donate-theme .sponsor-packet-frame {
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(12, 16, 40, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+}
+
+body.donate-theme .sponsor-packet-embed {
+    display: block;
+    width: 100%;
+    min-height: min(72vh, 640px);
+    height: min(72vh, 640px);
+    border: 0;
+    background: #1a1f3a;
+}
+
+body.donate-theme .navbar {
+    background: transparent;
+    box-shadow: none;
+    z-index: 3000;
+    justify-content: center;
+}
+
+body.donate-theme .logo {
+    display: none;
+}
+
+body.donate-theme .navbar-toggle {
+    display: none;
+}
+
+body.donate-theme .main-nav {
+    display: flex;
+    border-top: none;
+    width: auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    margin-top: 0;
+}
+
+body.donate-theme .main-nav li {
+    margin-top: 0;
+}
+
+body.donate-theme .nav-links {
+    margin-left: 28px;
+    margin-right: 28px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.95;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    body.donate-theme .navbar.fixed-top {
+        padding-top: 14px;
+    }
+}
+
 /* Ensure section content is above per-screen backgrounds */
 body.home .home-hero-inner,
 body.home .home-tagline-inner,
