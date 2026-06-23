@@ -24,6 +24,71 @@ p {
     color: #ffffff;
 }
 
+/* Nav Bar Styling */
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+    z-index: 3000;
+}
+
+.navbar {
+    justify-content: center;
+    height: 60px;
+    display: flex;
+}
+
+.logo {
+    display: none;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.main-nav {
+    display: flex;
+    border-top: none;
+    width: auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    margin-top: 0;
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+    body.home .navbar.fixed-top {
+        padding-top: 14px;
+    }
+}
+
+.nav-links {
+    margin-left: 28px;
+    margin-right: 28px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.95;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-nav li {
+    margin-top: 0;
+}
+
+/* other stuff */
+
 .flip-card {
   background-color: transparent;
   width: 300px;
