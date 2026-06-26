@@ -50,12 +50,14 @@
         </div>
     </div>
 
+            <div id="spacer"></div>
+
     <div id="div1">
         <h3>Engineering Biology to Solve Global Challenges</h3> <br>
     </div>
 
     <div id="div2">
-        <p>The Cornell iGEM Project Team is an award-winning synthetic biology group of 50 undergraduate students working to solve real-world challenges in health, environment, and biotechnology.</p>
+        <p>The Cornell iGEM Project Team is an award-winning synthetic biology group working to solve real-world challenges in health, environment, and biotechnology.</p>
     </div>
 
     <div id="container1">
@@ -151,16 +153,16 @@
     </div>
 
     <div id="container2">
-        <div class="b1">Wet Lab</div>
-        <div class="b1">Product Development</div>
-        <div class="b1">Policy & Practice</div>
-        <div class="b1">Business</div>
-        <div class="b1">Wiki & Design</div>
-        <div class="b1">Advisors & Alumni</div>
+        <button class="b1 active" data-target="wl">Wet Lab</button>
+        <button class="b1" data-target="pd">Product Development</button>
+        <button class="b1" data-target="pp">Policy & Practice</button>
+        <button class="b1" data-target="b">Business</button>
+        <button class="b1" data-target="wd">Wiki & Design</button>
+        <button class="b1" data-target="aa">Advisors & Alumni</button>
     </div>
 <br>
     <div id="container3">
-        <div id="wl" class="subteam">
+        <div id="wl" class="subteam active">
             <div>
                 <p class="st">The Wet Lab subteam is responsible for the design, construction, and validation of the biological and genetic components of our project. We build and test synthetic biology systems that form the foundation of our engineered solutions.</p>
                 <p class="st">Our work uses core synthetic biology techniques, including:</p>
@@ -189,6 +191,37 @@
                 <img src="images/content/2022_subteam.jpg" class="simg">
             </div>
         </div>
+
+        <div id="pp" class="subteam">
+
+        </div>
+
+        <div id="b" class="subteam">
+
+        </div>
+        
+        <div id="wd" class="subteam">
+
+        </div>
+
+        <div id="aa" class="subteam">
+
+        </div>
     </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.b1');
+        const contents = document.querySelectorAll('.subteam');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                contents.forEach(content => content.classList.remove('active'));
+                button.classList.add('active');
+                const targetId = button.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>

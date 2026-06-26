@@ -103,7 +103,7 @@ p {
 /* other stuff */
 
 #spacer {
-    height: 60px;
+    height: 80px;
 }
 
 .flip-card {
@@ -205,6 +205,8 @@ p {
 #div2 {
     display: flex;
     text-align: center;
+    margin: 30px;
+    font-size: 50px;
 }
 
 #container1 {
@@ -244,7 +246,22 @@ p {
 .b1 {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #ffffff;
-    background-color: #ffffff1A;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    width: 150px;
+    height: 75px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px, solid, #ffffff1A;
+}
+
+.b1.active {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.35); 
     width: 150px;
     height: 75px;
     border-radius: 30px;
@@ -272,11 +289,9 @@ p {
 }
 
 #container3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 #wl{
@@ -292,7 +307,7 @@ p {
 }
 
 .subteam {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #ffffff;
     background-color: #ffffff1A;
     height: 400px;
@@ -300,10 +315,30 @@ p {
     border-radius: 40px;
     border: 2px, outset, #ffffff1A;
     padding: 20px;
+    grid-column: 1;
+    grid-row: 1;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.subteam.active {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    background-color: #ffffff1A;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    border-radius: 40px;
+    border: 2px, outset, #ffffff1A;
+    padding: 20px;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
 }
 
 .st {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     margin: 20px;
 }
 
