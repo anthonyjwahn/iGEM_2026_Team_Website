@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body {
     background-color: #313e77;
 }
 
 h1 {
-    font-family: "Lexend Exa", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: normal;
     font-size: 100px;
     color: #ffffff;
@@ -11,7 +13,7 @@ h1 {
 }
 
 h3 {
-    font-family: "Lexend Exa", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: normal;
     font-size: 50px;
     color: #ffffff;
@@ -19,7 +21,7 @@ h3 {
 }
 
 p {
-    font-family: "Lexend Exa", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     color: #ffffff;
 }
@@ -36,10 +38,19 @@ p {
     justify-content: center;
     height: 60px;
     display: flex;
+    padding: .5rem 1rem;
+    flex-wrap: wrap;
 }
 
 .logo {
     display: none;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .navbar-toggle {
@@ -69,6 +80,7 @@ p {
 @media screen and (min-width: 768px) {
     body.home .navbar.fixed-top {
         padding-top: 14px;
+        height: 60px;
     }
 }
 
@@ -81,6 +93,7 @@ p {
     opacity: 0.95;
     color: #ffffff;
     text-decoration: none;
+    font-family: "Raleway", sans-serif;
 }
 
 .main-nav li {
@@ -88,6 +101,10 @@ p {
 }
 
 /* other stuff */
+
+#spacer {
+    height: 60px;
+}
 
 .flip-card {
   background-color: transparent;
@@ -239,7 +256,19 @@ p {
 }
 
 .middle {
-    background: linear-gradient(#4A5AA1 15%, #547284 100%)
+    background: linear-gradient(#4A5AA1 15%, #547284 100%);
+    width: 24%;
+    
+}
+
+.mt {
+    text-align: center;
+}
+
+#container4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #container3 {
