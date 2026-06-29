@@ -102,8 +102,59 @@
         <h3>What is Synthetic Biology?</h3> <br>
     </div>
 
+
+    <div class="timeline-wrapper">
+    <div class="timeline-container">
+      
+      <div class="timeline-line">
+        <div class="timeline-progress"></div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="tt">1978: Insulin</h3>
+          <p class="tc">Genentech developed modified <i>E. coli</i> bacterium to produce insulin on commercial scales</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="tt">1999: Golden Rice</h3>
+          <p class="tc">Genetically engineered to produce beta-carotene, a precursor to vitamin A to decrease vitamin A deficiency</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="tt">2003: BioBricks</h3>
+          <p class="tc">Development of standardized biological parts used to create genetic circuitsfor synthetic biology applications</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="tt">2009: Gibson</h3>
+          <p class="tc">Development of the Gibson assembly method for synthetic DNA cloning</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="tt">2012: CRISPR</h3>
+          <p class="tc">CRISPR-Cas9 system developed for genomic editing with precision</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
     <div id="div2">
-        <p>Synthetic biology is the field in which scientists redesign and repurpose machinery naturally found in the biological world to achieve a man-driven goal. Here are some famous examples of synthetic biology that have changed the world as we know it!</p>
+        <p class="tc">Synthetic biology describes how scientists redesign and repurpose natural machinery in the biological world to solve local and global issues! Cornell iGEM utilizes these same inspirations, technologies, and innovations to create impactful solutions for our communities.</p>
     </div>
 
     <div id="div1">
@@ -221,6 +272,50 @@
                 const targetId = button.getAttribute('data-target');
                 document.getElementById(targetId).classList.add('active');
             });
+        });
+// Timeline JS
+        document.addEventListener("DOMContentLoaded", () => {
+            const timeline = document.querySelector('.timeline-container');
+            const progress = document.querySelector('.timeline-progress');
+            const items = document.querySelectorAll(".timeline-item");
+
+        // --- 1. GROWING TIMELINE LINE LOGIC ---
+        window.addEventListener('scroll', () => {
+            const timelineRect = timeline.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // Use the center of the screen as our calculation trigger point
+            const triggerPoint = windowHeight / 2; 
+            
+            const totalHeight = timelineRect.height;
+            const scrolledPast = triggerPoint - timelineRect.top;
+            
+            let scrollPercent = (scrolledPast / totalHeight) * 100;
+            scrollPercent = Math.max(0, Math.min(scrollPercent, 100));
+            
+            progress.style.height = `${scrollPercent}%`;
+        });
+
+        // --- 2. SMOOTH TEXT BOX ACCORDION / REVEAL LOGIC ---
+        const observerOptions = {
+            root: null, 
+            rootMargin: "-15% 0px -15% 0px", 
+            threshold: 0.1 
+        };
+
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            } else {
+                entry.target.classList.remove("active");
+            }
+            });
+        }, observerOptions);
+
+        items.forEach((item) => {
+            timelineObserver.observe(item);
+        });
         });
     </script>
 </body>
