@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
 
 body {
     background-color: #313e77;
 }
 
 h1 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     font-weight: normal;
     font-size: 100px;
     color: #ffffff;
@@ -13,7 +13,7 @@ h1 {
 }
 
 h3 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     font-weight: normal;
     font-size: 50px;
     color: #ffffff;
@@ -21,7 +21,7 @@ h3 {
 }
 
 p {
-    font-family: "Raleway", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     font-size: 18px;
     color: #ffffff;
 }
@@ -93,7 +93,7 @@ p {
     opacity: 0.95;
     color: #ffffff;
     text-decoration: none;
-    font-family: "Raleway", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
 }
 
 .main-nav li {
@@ -244,7 +244,7 @@ p {
 }
 
 .b1 {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     color: #ffffff;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(10px);
@@ -259,7 +259,7 @@ p {
 }
 
 .b1.active {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     color: #ffffff;
     background: rgba(255, 255, 255, 0.35); 
     width: 150px;
@@ -307,7 +307,7 @@ p {
 }
 
 .subteam {
-    font-family: "Raleway", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     color: #ffffff;
     background-color: #ffffff1A;
     height: 400px;
@@ -323,7 +323,7 @@ p {
 }
 
 .subteam.active {
-    font-family: "Raleway", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     color: #ffffff;
     background-color: #ffffff1A;
     height: 400px;
@@ -338,7 +338,7 @@ p {
 }
 
 .st {
-    font-family: "Raleway", sans-serif;
+    font-family: "Lexend Exa", sans-serif;
     margin: 20px;
 }
 

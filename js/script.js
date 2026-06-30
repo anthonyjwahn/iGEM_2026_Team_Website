@@ -160,20 +160,30 @@ $(window).load(function () {
       .toLowerCase();
   }
 
+  const projectLogos = {
+    rehab: 'images/home_page/T--Cornell--BigLogo.png',
+    lumicure: 'images/home_page/lumicure-logo.png',
+    oscillate: 'images/home_page/T--Cornell--OscillateLogo.png',
+    oxyponics: 'images/home_page/CornellOxyponicsLogo.png',
+    legendairy: 'images/home_page/T--Cornell_NY--OpeningLogo.png',
+    fishpharm: 'images/home_page/Cornell_fishPHARMword.png'
+  };
+
   const accordionProjects = sourceItems.map((item) => {
     const link = item.querySelector('a');
     const title = item.querySelector('h6');
+    const titleText = title ? title.textContent.trim() : 'Past Project';
     const desc = item.querySelector('p');
     const achievements = Array.from(item.querySelectorAll('ul li')).map((li) => li.textContent.trim());
     const imageMatch = item.getAttribute('style') && item.getAttribute('style').match(/url\(["']?([^"')]+)["']?\)/);
 
     return {
       href: link ? link.href : '#',
-      title: title ? title.textContent.trim() : 'Past Project',
+      title: titleText,
       desc: desc ? desc.textContent.trim() : '',
       achievements,
       image: imageMatch ? imageMatch[1] : '',
-      logo: ''
+      logo: projectLogos[projectKey(titleText)] || ''
     };
   });
 
@@ -304,15 +314,18 @@ $(window).load(function () {
       copy.appendChild(logo);
     }
 
-    const title = document.createElement('h2');
-    title.className = 'past-project-title';
     const titleParts = project.title.split(' - ');
-    appendSplitWords(title, titleParts[0]);
-    if (titleParts[1]) {
-      const year = document.createElement('span');
-      year.className = 'past-project-year';
-      year.textContent = titleParts[1];
-      title.appendChild(year);
+    let title = null;
+    if (!project.logo) {
+      title = document.createElement('h2');
+      title.className = 'past-project-title';
+      appendSplitWords(title, titleParts[0]);
+      if (titleParts[1]) {
+        const year = document.createElement('span');
+        year.className = 'past-project-year';
+        year.textContent = titleParts[1];
+        title.appendChild(year);
+      }
     }
 
     const desc = document.createElement('p');
@@ -338,7 +351,8 @@ $(window).load(function () {
     visual.className = 'past-project-visual';
     if (project.image) visual.style.backgroundImage = `url("${project.image}")`;
 
-    copy.append(title, desc, achievements, cta);
+    if (title) copy.appendChild(title);
+    copy.append(desc, achievements, cta);
     slide.append(copy, visual);
     track.appendChild(slide);
 
@@ -503,21 +517,6 @@ $(window).load(function () {
 
   prev.addEventListener('click', () => go(idx - 1));
   next.addEventListener('click', () => go(idx + 1));
-
-  listButtons.forEach((button) => {
-    button.addEventListener('mousemove', (event) => {
-      const rect = button.getBoundingClientRect();
-      const x = event.clientX - rect.left - rect.width / 2;
-      const y = event.clientY - rect.top - rect.height / 2;
-      button.style.setProperty('--magnet-x', `${x * 0.16}px`);
-      button.style.setProperty('--magnet-y', `${y * 0.22}px`);
-    });
-
-    button.addEventListener('mouseleave', () => {
-      button.style.setProperty('--magnet-x', '0px');
-      button.style.setProperty('--magnet-y', '0px');
-    });
-  });
 
   carousel.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowLeft') {
