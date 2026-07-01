@@ -34,34 +34,34 @@
 	<title>iGEM at Cornell | Team</title>
 </head>
 
-<body>
+<body style="background: #313e77">
 	<!--/************************* NAVIGATION BAR ************************************/ -->
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<nav class="navbar fixed-top">
-		<span class="navbar-toggle" id="js-navbar-toggle">
-			<i class="fa fa-bars"></i>
-		</span>
-		<a href="index.html" class="logo"><img src="images/logo/logo_new.png" width="200" alt="logo"></a>
-		<ul class="main-nav" id="js-menu">
-			<li>
-				<a href="about.html" class="nav-links">About</a>
-			</li>
-			<li>
-				<a href="team.html" class="nav-links activenav">Team</a>
-			</li>
-			<li>
-				<a href="apply.html" class="nav-links">Apply</a>
-			</li>
-			<li>
-				<a href="faq.html" class="nav-links">FAQ</a>
-			</li>
-			<li>
-				<a href="donate.html" class="nav-links">Donate</a>
-			</li>
-		</ul>
-	</nav>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo"><img src="images/logo/logo_new.png" width="200" alt="logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="about.html" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="team.html" class="nav-links">Team</a>
+            </li>
+            <li>
+                <a href="apply.html" class="nav-links">Apply</a>
+            </li>
+            <li>
+                <a href="faq.html" class="nav-links">FAQ</a>
+            </li>
+            <li>
+                <a href="donate.html" class="nav-links">Donate</a>
+            </li>
+        </ul>
+    </nav>
 
 
 	<!--/****************************** BANNER *****************************************/ -->
@@ -104,9 +104,14 @@
 
 	<!--************** TEAM LEAD ****************-->
 	<!--Co leads-->
+	<div id="main_container">
+        <div id="bottom">
+            <img class="helix" id="helix1" src="images/banners/about2_2.png">
+        </div>
 
-	<div class="row" style="background-color: #313e77;">
-		<div style="height:200px;width:100%">
+        <div id="top">
+            <div class="row">
+		<div style="height:240px;width:100%">
 			<h1 class="leadHeader" style="margin-left: 10%;line-height: 300px">TEAM</h1>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4" style="margin:auto; margin-right:10px">
@@ -143,7 +148,6 @@
 		</div>
 		</div>
 		</div>
-		
 		<div class="col-xs-12 col-sm-6 col-md-4" style="margin:auto; margin-left:10px">
 		<div class="image-flip teamLead">
 			<div class="mainflip flip-0">
@@ -178,10 +182,13 @@
 			</div>
 		</div>
 		</div>
-		<div style="height:100px;width:100%">
+		<div style="height:120px;width:100%">
 			<h1 class="leadHeader" style="margin-left: 62%;line-height: 20px;">LEADS</h1>
 		</div>
 	</div>
+        </div>
+    </div>
+	<div style="height:60px"></div>
 	<!--./Co leads-->
 
 
@@ -223,12 +230,12 @@
 	<!--**************** MEMBERS *******************-->
 
 	<section id="team" class="pb-5">
-		<div class="container">
+		<div class="container" style="width:100%">
 			<h1 style="color:#ffffff;font-size:60px;margin-left:35%">SUBTEAMS</h1>
 			<br>
 			<!-- Members Nav -->
 
-			<ul id="subteamNav" class="nav">
+			<ul id="subteamNav" class="nav" style="width:120%">
 				<li onclick="selectSubteam('wetLabTeam', this)" class="nav-item active"><a class="nav-link">Wet Lab</a></li>
 				<li onclick="selectSubteam('productTeam', this)" class="nav-item"><a class="nav-link">Product Development</a>
 				</li>
@@ -2224,7 +2231,7 @@
 
 			<div class="alumniList hide">
 				<h1 class="subteamHeading">ALUMNI</h1>
-				<h2 style="text-align:center">Class of 2024</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2024</h2>
 				<div class="row">
 			<!--Alumni-->
 				<div class="col-xs-12 col-sm-6 col-md-4">
@@ -2348,7 +2355,7 @@
 				</div>
 				
 
-				<h2 style="text-align:center">Class of 2023</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2023</h2>
 				<div class="row">
 					<!--Alumni-->
 						<div class="col-xs-12 col-sm-6 col-md-4">
@@ -2458,7 +2465,7 @@
 				</div>
 
 
-				<h2 style="text-align:center">Class of 2022</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2022</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -2619,7 +2626,7 @@
 					<!--./Alumni-->	
 				</div>
 
-				<h2 style="text-align:center">Class of 2021</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2021</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -2776,7 +2783,7 @@
 					<!--./Alumni-->	
 				</div>
 
-				<h2 style="text-align:center">Class of 2020</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2020</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -2840,7 +2847,7 @@
 					<!--./Alumni-->	
 				</div>
 			
-				<h2 style="text-align:center">Class of 2019</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2019</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -2962,7 +2969,7 @@
 
 				</div>
 
-				<h2 style="text-align:center">Class of 2018</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2018</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -2979,7 +2986,7 @@
 					<!--./Alumni-->	
 				</div>
 			
-				<h2 style="text-align:center">Class of 2017</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2017</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -3026,7 +3033,7 @@
 
 				</div>
 
-				<h2 style="text-align:center">Class of 2014</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2014</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -3053,7 +3060,7 @@
 					<!--./Alumni-->	
 				</div>
 
-				<h2 style="text-align:center">Class of 2013</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2013</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -3111,7 +3118,7 @@
 					<!--./Alumni-->	
 				</div>
 
-				<h2 style="text-align:center">Class of 2012</h2>
+				<h2 class="alumniHeader" style="text-align:center">Class of 2012</h2>
 				<div class="row">
 					<!--Alumni-->
 					<div class="col-xs-12 col-sm-6 col-md-4">
@@ -3203,6 +3210,7 @@
 
 	<!--/************************* FOOTER ************************************/ -->
 
+	<!-- IDK why this is not in the Figma but I'm commenting it out for now
 	<footer class="footer-distributed">
 
 		<div class="footer-left">
@@ -3250,7 +3258,7 @@
 			</div>
 		</div>
 	</footer>
-
+	-->
 
 
 

@@ -60,113 +60,75 @@ a {
 /*** Navbar Styling ***/
 
 .navbar {
-    font-size: 18px;
-    background-color: #F5F5F5;
-    border: none;
-    color: #333333;
-    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, .2);
+    background: transparent;
+    box-shadow: none;
+    z-index: 3000;
 }
 
-.main-nav {
-    list-style-type: none;
+.navbar {
+    justify-content: center;
+    height: 60px;
+    display: flex;
+    padding: .5rem 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
     display: none;
-    color: #333333;
 }
 
-.nav-links,
-.logo {
-    text-decoration: none;
-    color: #333333;
-}
-
-.main-nav {
-    text-align: center;
-    border-top: 2px solid #333333;
-    width: 100%;
-}
-
-.main-nav li {
-    display: inline-block;
-    margin: auto 20px auto;
-    position: relative;
-    color: #333333;
-}
-
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    color: #333333;
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: #333333;
-    font-size: 24px;
+    display: none;
 }
 
-.activenav {
-    display: block;
-    color: #607D8B;
+.main-nav {
+    display: flex;
+    border-top: none;
+    width: auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    margin-top: 0;
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
+    body.home .navbar.fixed-top {
+        padding-top: 14px;
         height: 60px;
-        align-items: center;
-        color: #333333;
     }
+}
 
-    .main-nav {
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-        color: #333333;
-        border: none;
-        margin-top: 0px;
-    }
+.nav-links {
+    margin-left: 28px;
+    margin-right: 28px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.95;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Lexend Exa", sans-serif;
+}
 
-    .main-nav li {
-        margin: 0px;
-        color: #333333;
-        margin-top: -45px;
-    }
-
-    .nav-links {
-        margin-left: 40px;
-        color: #333333;
-        margin-top: 0px;
-    }
-
-    .logo {
-        margin-top: 0;
-        color: #333333;
-    }
-
-    .navbar-toggle {
-        display: none;
-        color: #333333;
-    }
-
-    .logo:hover,
-    .nav-links:hover {
-        color: #607D8B;
-        text-decoration: none;
-    }
-
-    .activenav {
-        color: #607D8B;
-        font-weight: 600;
-    }
+.main-nav li {
+    margin-top: 0;
 }
 
 /* =========================================================
@@ -2919,6 +2881,37 @@ footer {
 
 /*******************TEAM**********************/
 
+#main_container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;   
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    grid-area: 1 / 1; 
+}
+
+#top {
+    position: relative;
+    grid-area: 1 / 1; 
+}
+
+.helix {
+    padding: 0px;
+}
+
+#helix1 {
+    transform: rotate(-3deg);
+    margin-left:-50px;
+    width: 140%;
+    height: auto;
+    opacity: 50%;
+}
+
 .teamLead {
     width: 400px;
     height: 600px;
@@ -2970,6 +2963,8 @@ section .section-title {
     border-right-style: solid;
     border-radius: 35px;
     background: rgba(255, 255, 255, 0.05);
+    -webkit-box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
+            box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
 }
 
 .card-text {
@@ -3078,13 +3073,15 @@ section .section-title {
 
 #subteamNav {
     margin-bottom: 40px;
-    margin-left: 9%;
+    margin-left: 0%;
 }
 
 #subteamNav .active {
     border: solid 1px rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
+            box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
 }
 
 #subteamNav .active a {
@@ -3103,6 +3100,10 @@ section .section-title {
 
 /** Alumni **/
 
+.alumniHeader {
+    color: #ffffff;
+}
+
 .alumnicard {
     position: relative;
     z-index: 2;
@@ -3120,7 +3121,7 @@ section .section-title {
 }
 
 .alumnicard .card .card-title {
-    color: #607D8B !important;
+    color: #ffffff !important;
 }
 
 .alumnicard .card .card-body img {
@@ -3134,10 +3135,12 @@ section .section-title {
 
     .alumni h1 {
         padding-top: 50px;
+        color: #ffffff;
     }
 
     .alumni p {
         padding-top: 35px;
+        color: #ffffff;
     }
 
     .firstAlumList {
@@ -3148,6 +3151,7 @@ section .section-title {
     }
 
     .firstAlumList li {
+        color: #ffffff;
         list-style: none;
         padding-top: 3px;
     }
@@ -3155,11 +3159,12 @@ section .section-title {
     .secondAlumList {
         display: inline-block;
         float: right;
-        padding-right: 150px;
+        padding-right: 100px;
         padding-top: 25px;
     }
 
     .secondAlumList li {
+        color: #ffffff;
         list-style: none;
         padding-top: 3px;
     }
