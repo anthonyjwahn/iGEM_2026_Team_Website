@@ -2905,8 +2905,17 @@ footer {
 }
 
 #helix1 {
-    transform: rotate(-3deg);
+    transform: rotate(1deg);
     margin-left:-50px;
+    width: 120%;
+    height: auto;
+    opacity: 50%;
+}
+
+#helix2 {
+    transform: rotate(-7deg);
+    margin-left:-50px;
+    margin-top:-75px;
     width: 140%;
     height: auto;
     opacity: 50%;
@@ -2927,7 +2936,7 @@ footer {
 }
 
 #team {
-    background: #313e77 !important;
+    /*background: #313e77 !important;*/
     margin-top: -100px;
 }
 
